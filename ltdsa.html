@@ -1,0 +1,806 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>主页 - SmartDisplay</title>
+    <link href="mdui/css/mdui.min.css" rel="stylesheet">
+    <script src="mdui/js/mdui.min.js"></script>
+    <script src="mdui/js/echarts.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'SF Pro Display';
+            src: url(mdui/fonts/SF-Pro-Display-Thin.otf);
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: 'SF Pro Display';
+            src: url(mdui/fonts/SF-Pro-Display-Light.otf);
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: 'SF Pro Display';
+            src: url(mdui/fonts/SF-Pro-Display-Regular.otf);
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'SF Pro Display';
+            src: url(mdui/fonts/SF-Pro-Display-Medium.otf);
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: 'SF Pro Display';
+            src: url(mdui/fonts/SF-Pro-Display-Bold.otf);
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: 'SF Pro Display';
+            src: url(mdui/fonts/SF-Pro-Display-Heavy.otf);
+            font-weight: 900;
+        }
+
+        html {
+            background-color: #9a859f;
+        }
+
+        body {
+            background-image: url('purple.jpeg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            user-select: none;
+
+            font-family: SF Pro Display;
+        }
+
+        .mdui-appbar {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .mdui-toolbar {
+            background-color: #9a859f;
+        }
+
+        .mdui-dialog {
+            max-width: 100%;
+            width: 100%;
+            top: 40% !important;
+            height: 60% !important;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .sd-card {
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .sd-card-action {
+            background-color: #f2f2f2;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body class="mdui-appbar-with-toolbar mdui-drawer-body-left">
+    <div class="mdui-appbar mdui-appbar-fixed">
+        <div class="mdui-toolbar">
+            <a class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}"><i
+                    class="mdui-icon material-icons">menu</i></a>
+            <a class="mdui-typo-headline" onclick="getPage(0)">SmartDisplay</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <a class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#menu'}"><i
+                    class="mdui-icon material-icons">more_vert</i></a>
+            <ul id="menu" class="mdui-menu">
+                <li class="mdui-menu-item">
+                    <a href="/screenshot" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">photo_camera</i>捕获屏幕截图
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="drawer" class="mdui-drawer">
+        <div class="mdui-list">
+            <div id="drawer-home" class="mdui-list-item mdui-list-item-active mdui-ripple" onclick="getPage(0)">
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                <div class="mdui-list-item-content">主页</div>
+            </div>
+            <div id="drawer-timer" class="mdui-list-item mdui-ripple" onclick="getPage(1)">
+                <i class="mdui-list-item-icon mdui-icon material-icons">timer</i>
+                <div class="mdui-list-item-content">计时器</div>
+            </div>
+            <div id="drawer-status" class="mdui-list-item mdui-ripple" onclick="getPage(2)">
+                <i class="mdui-list-item-icon mdui-icon material-icons">dashboard</i>
+                <div class="mdui-list-item-content">系统状态</div>
+            </div>
+            <div id="drawer-settings" class="mdui-list-item mdui-ripple" onclick="getPage(3)">
+                <i class="mdui-list-item-icon mdui-icon material-icons">settings</i>
+                <div class="mdui-list-item-content">设置</div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-container">
+        <br /><br /><br /><br />
+        <div id="main-home">
+            <div class="mdui-typo-display-2" style="font-weight: 100;">主页</div>
+            <br /><br /><br />
+            <div class="sd-card" style="padding: 16px;">
+                <div class="mdui-row-xs-2 mdui-grid-list" style="text-align: center;">
+                    <div class="mdui-col">
+                        <div id="home-dark" class="sd-card-action mdui-ripple" onclick="setDark()">
+                            <i class="mdui-icon material-icons" style="line-height: 48px;">brightness_medium</i>
+                        </div>
+                        <p style="margin: 0; margin-top: 8px;">切换主题</p>
+                    </div>
+                    <div class="mdui-col">
+                        <div id="home-sleep" class="sd-card-action mdui-ripple" onclick="setSleep()">
+                            <i class="mdui-icon material-icons" style="line-height: 48px;">brightness_2</i>
+                        </div>
+                        <p style="margin: 0; margin-top: 8px;">休眠模式</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sd-card">
+                <div class="mdui-list">
+                    <div class="mdui-list-item mdui-ripple" onclick="getPage(1)">
+                        <i class="mdui-list-item-avatar mdui-icon material-icons">timer</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">计时器</div>
+                            <div id="home-timer" class="mdui-list-item-text">当前未设置</div>
+                        </div>
+                    </div>
+                    <div class="mdui-list-item mdui-ripple" onclick="getPage(2)">
+                        <i class="mdui-list-item-avatar mdui-icon material-icons">dashboard</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">系统状态</div>
+                            <div class="mdui-list-item-text">CPU 使用率、内存占用率</div>
+                        </div>
+                    </div>
+                    <div class="mdui-list-item mdui-ripple" onclick="getPage(3)">
+                        <i class="mdui-list-item-avatar mdui-icon material-icons">settings</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">设置</div>
+                            <div class="mdui-list-item-text">网络与同步、显示与声音、关于</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-timer" class="mdui-hidden">
+            <div class="mdui-typo-display-2" style="font-weight: 100;">计时器</div>
+            <br /><br /><br />
+            <div class="sd-card" style="padding: 16px;">
+                <br />
+                <div id="timer-panel">
+                    <div class="mdui-row-xs-4 mdui-grid-list">
+                        <div class="mdui-col-xs-1"></div>
+                        <div class="mdui-col-xs-5" style="text-align: center;">
+                            <button id="timer-minute-up" class="mdui-btn mdui-btn-icon" onclick="setTimerMin(1)"><i
+                                    class="mdui-icon material-icons">keyboard_arrow_up</i></button>
+                            <div id="timer-minute" class="mdui-typo-display-3">00</div>
+                            <button id="timer-minute-down" class="mdui-btn mdui-btn-icon" onclick="setTimerMin(-1)"
+                                disabled="true"><i class="mdui-icon material-icons">keyboard_arrow_down</i></button>
+                        </div>
+                        <div class="mdui-col-xs-5" style="text-align: center;">
+                            <button id="timer-second-up" class="mdui-btn mdui-btn-icon" onclick="setTimerSec(1)"><i
+                                    class="mdui-icon material-icons">keyboard_arrow_up</i></button>
+                            <div id="timer-second" class="mdui-typo-display-3">01</div>
+                            <button id="timer-second-down" class="mdui-btn mdui-btn-icon" onclick="setTimerSec(-1)"
+                                disabled="true"><i class="mdui-icon material-icons">keyboard_arrow_down</i></button>
+                        </div>
+                        <div class="mdui-col-xs-1"></div>
+                        <div class="mdui-col-xs-12"><br /><br /></div>
+                        <div id="timer-action">
+                            <div class="mdui-col">
+                                <button class="mdui-btn mdui-color-pink mdui-ripple"
+                                    style="width: 100%; min-width: 0; margin-bottom: 4px;"
+                                    onclick="setTimerMin(5)">+5'</button>
+                            </div>
+                            <div class="mdui-col" style="text-align: center;">
+                                <button class="mdui-btn mdui-color-pink mdui-ripple"
+                                    style="width: 100%; min-width: 0; margin-bottom: 4px;"
+                                    onclick="setTimerMin(10)">+10'</button>
+                            </div>
+                            <div class="mdui-col" style="text-align: center;">
+                                <button class="mdui-btn mdui-color-pink mdui-ripple"
+                                    style="width: 100%; min-width: 0; margin-bottom: 4px;"
+                                    onclick="setTimerSec(5)">+5''</button>
+                            </div>
+                            <div class="mdui-col" style="text-align: center;">
+                                <button class="mdui-btn mdui-color-pink mdui-ripple"
+                                    style="width: 100%; min-width: 0; margin-bottom: 4px;"
+                                    onclick="setTimerSec(10)">+10''</button>
+                            </div>
+                            <div class="mdui-col">
+                                <button class="mdui-btn mdui-color-pink mdui-ripple"
+                                    style="width: 100%; min-width: 0; margin-bottom: 4px;"
+                                    onclick="setTimerMin(-5)">-5'</button>
+                            </div>
+                            <div class="mdui-col" style="text-align: center;">
+                                <button class="mdui-btn mdui-color-pink mdui-ripple"
+                                    style="width: 100%; min-width: 0; margin-bottom: 4px;"
+                                    onclick="setTimerMin(-10)">-10'</button>
+                            </div>
+                            <div class="mdui-col" style="text-align: center;">
+                                <button class="mdui-btn mdui-color-pink mdui-ripple"
+                                    style="width: 100%; min-width: 0; margin-bottom: 4px;"
+                                    onclick="setTimerSec(-5)">-5''</button>
+                            </div>
+                            <div class="mdui-col" style="text-align: center;">
+                                <button class="mdui-btn mdui-color-pink mdui-ripple"
+                                    style="width: 100%; min-width: 0; margin-bottom: 4px;"
+                                    onclick="setTimerSec(-10)">-10''</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <div style="text-align: center;">
+                        <button id="timer-btn" class="mdui-btn mdui-color-pink mdui-ripple">开始</button>
+                    </div>
+                </div>
+                <div id="timer-sleep" class="mdui-hidden">
+                    <div class="mdui-typo" style="text-align: center;">
+                        <p>休眠模式下不支持使用计时器</p>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+        <div id="main-status" class="mdui-hidden">
+            <div class="mdui-typo-display-2" style="font-weight: 100;">系统状态</div>
+            <br /><br /><br />
+            <div class="sd-card" style="padding: 16px;">
+                <div id="status-chart" style="width: 100%; height: 45%;"></div>
+            </div>
+            <div class="sd-card">
+                <div class="mdui-list">
+                    <div class="mdui-list-item">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">data_usage</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">CPU 使用率</div>
+                            <div id="status-cpu" class="mdui-list-item-text">未知</div>
+                        </div>
+                    </div>
+                    <div class="mdui-list-item">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">storage</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">内存占用率</div>
+                            <div id="status-ram" class="mdui-list-item-text">未知</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-settings" class="mdui-hidden">
+            <div class="mdui-typo-display-2" style="font-weight: 100;">设置</div>
+            <br /><br /><br />
+            <div class="sd-card">
+                <div class="mdui-list">
+                    <li class="mdui-subheader">网络与同步</li>
+                    <div class="mdui-list-item mdui-ripple" onclick="setWeatherFrequency()">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">wb_sunny</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">天气更新频率</div>
+                            <div class="mdui-list-item-text">10 分钟</div>
+                        </div>
+                    </div>
+                    <li class="mdui-subheader">显示与声音</li>
+                    <div class="mdui-list-item">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">brightness_2</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">休眠模式下允许切换主题</div>
+                            <div class="mdui-list-item-text">关闭后部分自动化将无法使用</div>
+                        </div>
+                        <label class="mdui-switch" style="margin-top: 24px;">
+                            <input type="checkbox" checked />
+                            <i class="mdui-switch-icon"></i>
+                        </label>
+                    </div>
+                    <div class="mdui-list-item">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">volume_up</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">静音</div>
+                            <div class="mdui-list-item-text">计时器提示音</div>
+                        </div>
+                        <label class="mdui-switch" style="margin-top: 24px;">
+                            <input type="checkbox" />
+                            <i class="mdui-switch-icon"></i>
+                        </label>
+                    </div>
+                    <div class="mdui-list-item mdui-ripple" onclick="setWeatherCustom()">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">wb_sunny</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">天气自定义位显示内容</div>
+                            <div class="mdui-list-item-text">风力</div>
+                        </div>
+                    </div>
+                    <li class="mdui-subheader">关于</li>
+                    <div class="mdui-list-item mdui-ripple" onclick="getChangelog()">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">apps</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">SmartDisplay 版本</div>
+                            <div id="settings-about-version" class="mdui-list-item-text">未知</div>
+                        </div>
+                    </div>
+                    <div class="mdui-list-item">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">layers</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">Electron 版本</div>
+                            <div id="settings-about-electron" class="mdui-list-item-text">未知</div>
+                        </div>
+                    </div>
+                    <div class="mdui-list-item">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">language</i>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">Chromium 版本</div>
+                            <div id="settings-about-chromium" class="mdui-list-item-text">未知</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var $ = mdui.$;
+        var timerMin = 0;
+        var timerSec = 1;
+        var timerStart = false;
+        var pageIndex = 0;
+
+        document.getElementById('status-chart').style.weight = document.getElementsByClassName('sd-card')[3].offsetWidth;
+        var statusChart = echarts.init(document.getElementById('status-chart'));
+
+        function getInit() {
+            statusChart.resize();
+            $.ajax({
+                url: '/api/init',
+                dataType: 'json',
+                success: function (res) {
+                    if (res.isSleep) {
+                        $('#home-sleep').addClass('mdui-color-pink');
+                        $('#timer-panel').addClass('mdui-hidden');
+                        $('#timer-sleep').removeClass('mdui-hidden');
+                    } else {
+                        $('#home-sleep').removeClass('mdui-color-pink');
+                        $('#timer-panel').removeClass('mdui-hidden');
+                        $('#timer-sleep').addClass('mdui-hidden');
+                    }
+
+                    if (res.timerStart) {
+                        $('#home-timer').text('正在计时');
+                    } else {
+                        $('#home-timer').text('当前未设置');
+                    }
+
+                    $('#settings-about-version').text(res.version);
+                    $('#settings-about-electron').text(res.electron);
+                    $('#settings-about-chromium').text(res.chromium);
+
+                    $('#status-cpu').text(`${res.cpuArr[4]}%`);
+                    $('#status-ram').text(`${res.ramArr[4]}%`);
+
+                    var nowTime = new Date();
+                    var timeArr = [
+                        `${new Date(nowTime.getTime() - 4000).getHours() >= 10 ? new Date(nowTime.getTime() - 4000).getHours() : '0' + new Date(nowTime.getTime() - 4000).getHours()}:${new Date(nowTime.getTime() - 4000).getMinutes() >= 10 ? new Date(nowTime.getTime() - 4000).getMinutes() : '0' + new Date(nowTime.getTime() - 4000).getMinutes()}:${new Date(nowTime.getTime() - 4000).getSeconds() >= 10 ? new Date(nowTime.getTime() - 4000).getSeconds() : '0' + new Date(nowTime.getTime() - 4000).getSeconds()}`,
+
+                        `${new Date(nowTime.getTime() - 3000).getHours() >= 10 ? new Date(nowTime.getTime() - 3000).getHours() : '0' + new Date(nowTime.getTime() - 3000).getHours()}:${new Date(nowTime.getTime() - 3000).getMinutes() >= 10 ? new Date(nowTime.getTime() - 3000).getMinutes() : '0' + new Date(nowTime.getTime() - 3000).getMinutes()}:${new Date(nowTime.getTime() - 3000).getSeconds() >= 10 ? new Date(nowTime.getTime() - 3000).getSeconds() : '0' + new Date(nowTime.getTime() - 3000).getSeconds()}`,
+
+                        `${new Date(nowTime.getTime() - 2000).getHours() >= 10 ? new Date(nowTime.getTime() - 2000).getHours() : '0' + new Date(nowTime.getTime() - 2000).getHours()}:${new Date(nowTime.getTime() - 2000).getMinutes() >= 10 ? new Date(nowTime.getTime() - 2000).getMinutes() : '0' + new Date(nowTime.getTime() - 2000).getMinutes()}:${new Date(nowTime.getTime() - 2000).getSeconds() >= 10 ? new Date(nowTime.getTime() - 2000).getSeconds() : '0' + new Date(nowTime.getTime() - 2000).getSeconds()}`,
+
+                        `${new Date(nowTime.getTime() - 1000).getHours() >= 10 ? new Date(nowTime.getTime() - 1000).getHours() : '0' + new Date(nowTime.getTime() - 1000).getHours()}:${new Date(nowTime.getTime() - 1000).getMinutes() >= 10 ? new Date(nowTime.getTime() - 1000).getMinutes() : '0' + new Date(nowTime.getTime() - 1000).getMinutes()}:${new Date(nowTime.getTime() - 1000).getSeconds() >= 10 ? new Date(nowTime.getTime() - 1000).getSeconds() : '0' + new Date(nowTime.getTime() - 1000).getSeconds()}`
+                    ];
+
+                    timeArr.push(`${nowTime.getHours() >= 10 ? nowTime.getHours() : '0' + nowTime.getHours()}:${nowTime.getMinutes() >= 10 ? nowTime.getMinutes() : '0' + nowTime.getMinutes()}:${nowTime.getSeconds() >= 10 ? nowTime.getSeconds() : '0' + nowTime.getSeconds()}`);
+
+                    var statusOption = {
+                        xAxis: {
+                            data: timeArr
+                        },
+                        yAxis: {},
+                        series: [
+                            {   
+                                name: 'CPU',
+                                data: res.cpuArr,
+                                type: 'line',
+                                areaStyle: {}
+                            },
+                            {
+                                name: '内存',
+                                data: res.ramArr,
+                                type: 'line',
+                                areaStyle: {}
+                            }
+                        ],
+                        legend: {
+                            data: ['CPU', '内存']
+                        }
+                    };
+
+                    statusChart.setOption(statusOption);
+                    //statusChart.resize();
+                }
+            });
+        }
+
+        function setDark() {
+            $.ajax({
+                url: '/api/dark',
+                success: function (res) {
+                    if (res != 'ok') {
+                        mdui.snackbar({
+                            message: res
+                        });
+                    }
+                }
+            });
+        }
+
+        function setSleep() {
+            $.ajax({
+                url: '/api/sleep',
+                success: function (res) {
+                    res == 'true' ? $('#home-sleep').addClass('mdui-color-pink') : $('#home-sleep').removeClass('mdui-color-pink');
+                }
+            });
+        }
+
+        function getPage(i) {
+            if (i != pageIndex) {
+                var iOut = 1;
+                var iIn = 0;
+
+                var fadeOut = setInterval(function () {
+                    if (iOut > 0) {
+                        document.getElementById('main-home').style.opacity = iOut;
+                        document.getElementById('main-timer').style.opacity = iOut;
+                        document.getElementById('main-settings').style.opacity = iOut;
+
+                        iOut = iOut - 0.05;
+                    } else {
+                        clearInterval(fadeOut);
+                        iOut = 1;
+                    }
+                }, 1);
+
+                setTimeout(function () {
+                    $('#main-home').addClass('mdui-hidden');
+                    $('#main-timer').addClass('mdui-hidden');
+                    $('#main-status').addClass('mdui-hidden');
+                    $('#main-settings').addClass('mdui-hidden');
+
+                    $('#drawer-home').removeClass('mdui-list-item-active');
+                    $('#drawer-timer').removeClass('mdui-list-item-active');
+                    $('#drawer-status').removeClass('mdui-list-item-active');
+                    $('#drawer-settings').removeClass('mdui-list-item-active');
+
+                    switch (i) {
+                        case 0:
+                            $('#main-home').removeClass('mdui-hidden');
+                            $('#drawer-home').addClass('mdui-list-item-active');
+
+                            document.title = '主页 - SmartDisplay';
+                            history.pushState(null, null, '/');
+
+                            var fadeIn = setInterval(function () {
+                                if (iIn < 1) {
+                                    document.getElementById('main-home').style.opacity = iIn;
+                                    iIn = iIn + 0.05;
+                                } else {
+                                    clearInterval(fadeIn);
+                                    iIn = 0;
+                                }
+                            }, 1);
+                            break;
+                        case 1:
+                            $('#main-timer').removeClass('mdui-hidden');
+                            $('#drawer-timer').addClass('mdui-list-item-active');
+
+                            document.title = '计时器 - SmartDisplay';
+                            history.pushState(null, null, '/#timer');
+                            getTimer();
+
+                            var fadeIn = setInterval(function () {
+                                if (iIn < 1) {
+                                    document.getElementById('main-timer').style.opacity = iIn;
+                                    iIn = iIn + 0.05;
+                                } else {
+                                    clearInterval(fadeIn);
+                                    iIn = 0;
+                                }
+                            }, 1);
+                            break;
+                        case 2:
+                            $('#main-status').removeClass('mdui-hidden');
+                            $('#drawer-status').addClass('mdui-list-item-active');
+
+                            document.title = '系统状态 - SmartDisplay';
+                            history.pushState(null, null, '/#status');
+
+                            var fadeIn = setInterval(function () {
+                                if (iIn < 1) {
+                                    document.getElementById('main-status').style.opacity = iIn;
+                                    iIn = iIn + 0.05;
+                                } else {
+                                    clearInterval(fadeIn);
+                                    iIn = 0;
+                                }
+                            }, 1);
+                            break;
+                        case 3:
+                            $('#main-settings').removeClass('mdui-hidden');
+                            $('#drawer-settings').addClass('mdui-list-item-active');
+
+                            document.title = '设置 - SmartDisplay';
+                            history.pushState(null, null, '/#settings');
+
+                            var fadeIn = setInterval(function () {
+                                if (iIn < 1) {
+                                    document.getElementById('main-settings').style.opacity = iIn;
+                                    iIn = iIn + 0.05;
+                                } else {
+                                    clearInterval(fadeIn);
+                                    iIn = 0;
+                                }
+                            }, 1);
+                            break;
+                    }
+
+                    pageIndex = i;
+                }, 200);
+            }
+        }
+
+        function setTimerMin(val) {
+            if (timerMin + val >= 0 && timerMin + val < 100) {
+                timerMin += val;
+                $('#timer-minute').text(`${timerMin >= 10 ? timerMin : '0' + timerMin}`);
+                if (timerMin == 0) {
+                    document.getElementById('timer-minute-down').disabled = true;
+                    if (timerSec == 0) setTimerSec(1);
+                    if (timerSec == 1) document.getElementById('timer-second-down').disabled = true;
+                } else {
+                    document.getElementById('timer-minute-down').disabled = false;
+                    if (timerSec == 1) document.getElementById('timer-second-down').disabled = false;
+                }
+
+                if (timerMin == 99) {
+                    document.getElementById('timer-minute-up').disabled = true;
+                } else {
+                    document.getElementById('timer-minute-up').disabled = false;
+                }
+            }
+        }
+
+        function setTimerSec(val) {
+            if (timerSec + val >= 0 && timerSec + val < 60) {
+                timerSec += val;
+                $('#timer-second').text(`${timerSec >= 10 ? timerSec : '0' + timerSec}`);
+                if (timerSec == 0) {
+                    document.getElementById('timer-second-down').disabled = true;
+                } else {
+                    if (timerMin != 0) {
+                        document.getElementById('timer-second-down').disabled = false;
+                    } else {
+                        if (timerSec != 1) {
+                            document.getElementById('timer-second-down').disabled = false;
+                        } else {
+                            document.getElementById('timer-second-down').disabled = true;
+                        }
+                    }
+                }
+
+                if (timerSec == 59) {
+                    document.getElementById('timer-second-up').disabled = true;
+                } else {
+                    document.getElementById('timer-second-up').disabled = false;
+                }
+            }
+        }
+
+        function getTimer() {
+            $.ajax({
+                url: '/api/timer',
+                dataType: 'json',
+                success: function (res) {
+                    if (res.min != 0 || res.sec != 0) {
+                        $('#timer-minute').text(res.min >= 10 ? res.min : '0' + res.min);
+                        $('#timer-second').text(res.sec >= 10 ? res.sec : '0' + res.sec);
+                        $('#timer-action').addClass('mdui-hidden');
+                        $('#timer-btn').text('结束');
+                        document.getElementById('timer-minute-up').disabled = true;
+                        document.getElementById('timer-minute-down').disabled = true;
+                        document.getElementById('timer-second-up').disabled = true;
+                        document.getElementById('timer-second-down').disabled = true;
+                        timerStart = true;
+                    } else {
+                        $('#timer-minute').text('00');
+                        $('#timer-second').text('01');
+                        $('#timer-action').removeClass('mdui-hidden');
+                        $('#timer-btn').text('开始');
+                        document.getElementById('timer-minute-up').disabled = false;
+                        document.getElementById('timer-minute-down').disabled = true;
+                        document.getElementById('timer-second-up').disabled = false;
+                        document.getElementById('timer-second-down').disabled = true;
+                        timerMin = 0;
+                        timerSec = 1;
+                        timerStart = false;
+                    }
+                }
+            });
+
+            var timerInterval = setInterval(function () {
+                $.ajax({
+                    url: '/api/timer',
+                    dataType: 'json',
+                    success: function (res) {
+                        if (res.min != 0 || res.sec != 0) {
+                            $('#timer-minute').text(res.min >= 10 ? res.min : '0' + res.min);
+                            $('#timer-second').text(res.sec >= 10 ? res.sec : '0' + res.sec);
+                            $('#timer-action').addClass('mdui-hidden');
+                            $('#timer-btn').text('结束');
+                            document.getElementById('timer-minute-up').disabled = true;
+                            document.getElementById('timer-minute-down').disabled = true;
+                            document.getElementById('timer-second-up').disabled = true;
+                            document.getElementById('timer-second-down').disabled = true;
+                            timerStart = true;
+                        } else {
+                            if (typeof timerInterval != 'undefined') clearInterval(timerInterval);
+                            $('#timer-minute').text('00');
+                            $('#timer-second').text('01');
+                            $('#timer-action').removeClass('mdui-hidden');
+                            $('#timer-btn').text('开始');
+                            document.getElementById('timer-minute-up').disabled = false;
+                            document.getElementById('timer-minute-down').disabled = true;
+                            document.getElementById('timer-second-up').disabled = false;
+                            document.getElementById('timer-second-down').disabled = true;
+                            timerMin = 0;
+                            timerSec = 1;
+                            timerStart = false;
+                        }
+                    }
+                });
+            }, 50);
+        }
+
+        function setTimer(mode) {
+            if (mode == 1) {
+                $.ajax({
+                    url: '/api/timer',
+                    data: {
+                        'min': timerMin,
+                        'sec': timerSec
+                    },
+                    success: function () {
+                        getTimer();
+                    }
+                });
+            } else {
+                $.ajax({
+                    url: '/api/timer',
+                    data: {
+                        'min': 0,
+                        'sec': 0
+                    },
+                    success: function () {
+                        getTimer();
+                    }
+                });
+            }
+        }
+
+        function setWeatherFrequency() {
+            mdui.dialog({
+                title: '天气更新频率',
+                content: `按一定频率向和风天气 API 获取数据。过高的频率可能会触发阈值，休眠模式下不会获取。<br /><br /><label class="mdui-radio"><input type="radio" name="settings-weather-frequency" checked/><i class="mdui-radio-icon"></i>10 分钟（默认）</label><br /><label class="mdui-radio"><input type="radio" name="settings-weather-frequency" /><i class="mdui-radio-icon"></i>20 分钟</label>`,
+                buttons: [
+                    {
+                        "text": "取消"
+                    },
+                    {
+                        "text": "确定"
+                    }
+                ]
+            });
+        }
+
+        function setWeatherCustom() {
+            mdui.dialog({
+                title: '天气自定义位显示内容',
+                content: `面板的第 4 项卡片为自定义位，可以选择您想要展示的内容。<br /><br /><label class="mdui-radio"><input type="radio" name="settings-weather-custom" checked/><i class="mdui-radio-icon"></i>风力（默认）</label><br /><label class="mdui-radio"><input type="radio" name="settings-weather-custom" /><i class="mdui-radio-icon"></i>降水量</label><br /><label class="mdui-radio"><input type="radio" name="settings-weather-custom" /><i class="mdui-radio-icon"></i>气压</label><br /><label class="mdui-radio"><input type="radio" name="settings-weather-custom" /><i class="mdui-radio-icon"></i>能见度</label>`,
+                buttons: [
+                    {
+                        "text": "取消"
+                    },
+                    {
+                        "text": "确定"
+                    }
+                ]
+            });
+        }
+
+        function getChangelog() {
+            $.ajax({
+                url: '/Changelog.txt',
+                success: function (res) {
+                    res = res.replace(/\n/g, '<br />');
+                    mdui.dialog({
+                        title: '发行注记',
+                        content: res,
+                        buttons: [
+                            {
+                                "text": "确定"
+                            }
+                        ]
+                    });
+                }
+            });
+        }
+
+        switch (location.hash) {
+            case '#timer':
+                getPage(1);
+                break;
+            case '#status':
+                getPage(2);
+                break;
+            case '#settings':
+                getPage(3);
+                break;
+            default:
+                if (location.hash.indexOf('mdui-dialog') == -1) getPage(0);
+                break;
+        }
+
+        window.addEventListener('popstate', function (e) {
+            console.log(location.hash);
+            switch (location.hash) {
+                case '#timer':
+                    getPage(1);
+                    break;
+                case '#status':
+                    getPage(2);
+                    break;
+                case '#settings':
+                    getPage(2);
+                    break;
+                default:
+                    if (location.hash.indexOf('mdui-dialog') == -1) getPage(0);
+                    break;
+            }
+        }, false);
+
+        window.onresize = function () {
+            statusChart.resize();
+        }
+
+        document.getElementById('timer-btn').onclick = function () {
+            if (!timerStart) {
+                setTimer(1);
+            } else {
+                setTimer(2);
+            }
+        }
+
+        getInit();
+
+        setInterval(getInit, 1000);
+    </script>
+</body>
+
+</html>

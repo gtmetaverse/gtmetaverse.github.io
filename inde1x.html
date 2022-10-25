@@ -1,0 +1,3260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>GearMagic</title>
+		<link rel="stylesheet" type="text/css" href="css/mdui.css" />
+		<link rel="stylesheet" type="text/css" href="css/mdui.min.css" />
+		<script src="js/mdui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mdui.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	</head>
+
+	<body class="mdui-appbar-with-toolbar mdui-appbar-with-tab mdui-theme-primary-white mdui-drawer-body-left">
+	<div class="mdui-appbar mdui-appbar-fixed">
+			<div class="mdui-toolbar mdui-color-white">
+				<button class="mdui-btn mdui-btn-icon mdui-hidden-md-up" id="menu" mdui-drawer="{target:'#left-drawer-sm',overlay:true,swipe:true}"><i
+					 class="mdui-icon material-icons">menu</i></button>
+				<img src="https://s2.ax1x.com/2020/02/28/3DHw40.png" height="30" width="30" class="mdui-hidden-sm-down"></img>
+				<a href="javascript:;" class="mdui-typo-title mdui-hidden-md-up">GearMagic</a>
+				<div class="mdui-toolbar-spacer"></div>
+				
+			</div>
+			<div class="mdui-tab mdui-color-white mdui-tab-centered" mdui-tab>
+			
+				<a href="#home" class="mdui-ripple mdui-ripple-white" onclick="location='?#home';window.scrollTo(0,0)">
+				<!--<a href="#home" class="mdui-ripple mdui-ripple-white" onclick="location='?#home';location.reload()">-->
+					<label>首页</label>
+				</a>
+				<a href="#gmlite" class="mdui-ripple mdui-ripple-white" onclick="location='?#gmlite';window.scrollTo(0,0)">
+					<label class="mdui-text-capitalize">GearMagic Lite</label>
+				</a>
+				<a href="#aboutgm" class="mdui-ripple mdui-ripple-white" onclick="location='?#aboutgm';window.scrollTo(0,0)">
+				<!--<a href="#aboutgm" class="mdui-ripple mdui-ripple-white" onclick="location='?#aboutgm';location.reload()">-->
+					<label>关于</label>
+				</a>
+				<a href="#question" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>Question</label>
+				</a>
+				<a hr
+				<a href="#mi6" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MI6</label>
+				</a>
+				<a href="#mi6x" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MI6X</label>
+				</a>
+				<a href="#mi8" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MI8</label>
+				</a>
+				<a href="#mi8exp" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MI8Exp</label>
+				</a>
+				<a href="#mi8ud" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MI8UD</label>
+				</a>
+				<a href="#mi9" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MI9</label>
+				</a>
+				<a href="#mi9se" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MI9 SE</label>
+				</a>
+				<a href="#mi9pro" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MI9 Pro</label>
+				</a>
+				<a href="#mix2" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MIX2</label>
+				</a>
+				<a href="#mix2s" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MIX2S</label>
+				</a>
+				<a href="#mix3" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MIX3</label>
+				</a>
+				<a href="#minote3" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MI Note3</label>
+				</a>
+				<a href="#k20" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>Redmi K20</label>
+				</a>
+				<a href="#k20pro" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>Redmi K20 Pro</label>
+				</a>
+				<a href="#k305g" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>Redmi K30 5G</label>
+				</a>
+				<a href="#note3pro" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>Redmi Note3 Pro</label>
+				</a>
+				<a href="#note4x" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>Redmi Note4X</label>
+				</a>
+				<a href="#note7" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>Redmi Note7</label>
+				</a>
+				<a href="#note7pro" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>Redmi Note7 Pro</label>
+				</a>
+				<a href="#rm3sx" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>Redmi 3SX</label>
+				</a>
+				<a href="#cc9" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>MI CC9</label>
+				</a>
+				<a href="#rm4a" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>Redmi 4A</label>
+				</a>
+				<a href="#404" class="mdui-ripple mdui-ripple-white" style='display:none'>
+					<label>404</label>
+				</a>
+			</div>
+			
+	</div>
+		
+		
+		
+
+		
+
+		<div class="mdui-drawer mdui-color-white mdui-drawer-full-height mdui-drawer-close mdui-shadow-0 mdui-hidden-md-up" id="left-drawer-sm">
+			
+			<nav role="navigation">
+				<ul class="mdui-list" mdui-collapse="{accordion: true}">
+					<!--<button class="mdui-btn" mdui-drawer-close>close</button>-->
+					<li class="mdui-subheader">导航</li>
+					<a href="?#home" onclick="location='?#home';location.reload();window.scrollTo(0,0)">
+						<li class="mdui-list-item mdui-ripple ">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">home</i>
+							<div class="mdui-list-item-content">首页</div>
+						</li>
+					</a>
+					<a href="?#gmlite" onclick="location='?#gmlite';location.reload();window.scrollTo(0,0)">
+						<li class="mdui-list-item mdui-ripple ">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">polymer</i>
+							<div class="mdui-list-item-content">GearMagic Lite</div>
+						</li>
+					</a>
+					<a href="?#question" onclick="location='?#question';location.reload();window.scrollTo(0,0)">
+						<li class="mdui-list-item mdui-ripple ">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">question_answer</i>
+							<div class="mdui-list-item-content">常见问题</div>
+						</li>
+					</a>
+					<a href="?#aboutgm" onclick="location='?#aboutgm';location.reload();window.scrollTo(0,0)">
+					<li class="mdui-list-item mdui-ripple">
+						<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">people</i>
+						<div class="mdui-list-item-content">关于我们</div>
+					</li>
+					</a>
+					<li class="mdui-subheader">设备名称</li>
+
+					<li class="mdui-collapse-item">
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">phone_android</i>
+							<div class="mdui-list-item-content">Xiaomi</div>
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+							<a href="?#mi6" onclick="location='?#mi6';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI6</li>
+							</a>
+							<a href="?#mi6x" onclick="location='?#mi6x';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI6X</li>
+							</a>
+							<a href="?#mi8" onclick="location='?#mi8';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI8</li>
+							</a>
+							<a href="?#mi8ud" onclick="location='?#mi8ud';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI8 UD</li>
+							</a>
+							<a href="?#mi8exp" onclick="location='?#mi8exp';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI8 Exp</li>
+							</a>
+							<a href="?#mi9" onclick="location='?#mi9';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI9</li>
+							</a>
+							<a href="?#mi9se" onclick="location='?#mi9se';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI9 SE</li>
+							</a>
+							<a href="?#mi9pro" onclick="location='?#mi9pro';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI9 Pro</li>
+							</a>
+							<a href="?#cc9" onclick="location='?#cc9';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI CC9</li>
+							</a>
+							<a href="?#mix2" onclick="location='?#mix2';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MIX2</li>
+							</a>
+							<a href="?#mix2s" onclick="location='?#mix2s';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MIX2S</li>
+							</a>
+							<a href="?#mix3" onclick="location='?#mix3';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MIX3</li>
+							</a>
+							<a href="?#minote3" onclick="location='?#minote3';location.reload()">
+								<li class="mdui-list-item mdui-ripple">Note 3</li>
+							</a>
+						</ul>
+					</li>
+
+					<li class="mdui-collapse-item">
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">phone_android</i>
+							<div class="mdui-list-item-content">Redmi</div>
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+							<a href="?#rm3sx" onclick="location='?#rm3sx';location.reload()">
+								<li class="mdui-list-item mdui-ripple">3S/3X</li>
+							</a>
+							<a href="?#rm4a" onclick="location='?#rm4a';location.reload()">
+								<li class="mdui-list-item mdui-ripple">4A</li>
+							</a>
+							<a href="?#note3pro" onclick="location='?#note3pro';location.reload()">
+								<li class="mdui-list-item mdui-ripple">Note3 Pro Qualcomm</li>
+							</a>
+							<a href="?#note4x" onclick="location='?#note4x';location.reload()">
+								<li class="mdui-list-item mdui-ripple">Note4(X) Qualcomm</li>
+							</a>
+							<a href="?#note7" onclick="location='?#note7';location.reload()">
+								<li class="mdui-list-item mdui-ripple">Note7</li>
+							</a>
+							<a href="?#note7pro" onclick="location='?#note7pro';location.reload()">
+								<li class="mdui-list-item mdui-ripple">Note7 Pro</li>
+							</a>
+							<a href="?#k20" onclick="location='?#k20';location.reload()">
+								<li class="mdui-list-item mdui-ripple">K20</li>
+							</a>
+							<a href="?#k20pro" onclick="location='?#k20pro';location.reload()">
+								<li class="mdui-list-item mdui-ripple">K20 Pro</li>
+							</a>
+							<a href="?#k305g" onclick="location='?#k305g';location.reload()">
+								<li class="mdui-list-item mdui-ripple">K30 5G</li>
+							</a>
+
+						</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+
+		</div>
+		
+		<div class="mdui-drawer mdui-drawer-open mdui-hidden-sm-down" id="left-drawer-md">
+			<nav role="navigation">
+				<ul class="mdui-list" mdui-collapse="{accordion: true}">
+					<!--<button class="mdui-btn" mdui-drawer-close>close</button>-->
+					<li class="mdui-subheader">导航</li>
+					<a href="?#home" onclick="location='?#home';location.reload();window.scrollTo(0,0)">
+						<li class="mdui-list-item mdui-ripple ">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">home</i>
+							<div class="mdui-list-item-content">首页</div>
+						</li>
+					</a>
+					<a href="?#gmlite" onclick="location='?#gmlite';location.reload();window.scrollTo(0,0)">
+						<li class="mdui-list-item mdui-ripple ">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">polymer</i>
+							<div class="mdui-list-item-content">GearMagic Lite</div>
+						</li>
+					</a>
+					<a href="?#question" onclick="location='?#question';location.reload();window.scrollTo(0,0)">
+						<li class="mdui-list-item mdui-ripple ">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">question_answer</i>
+							<div class="mdui-list-item-content">常见问题</div>
+						</li>
+					</a>
+					<a href="?#aboutgm" onclick="location='?#aboutgm';location.reload();window.scrollTo(0,0)">
+					<li class="mdui-list-item mdui-ripple">
+						<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">people</i>
+						<div class="mdui-list-item-content">关于我们</div>
+					</li>
+					</a>
+					<li class="mdui-subheader">设备名称</li>
+
+					<li class="mdui-collapse-item">
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">phone_android</i>
+							<div class="mdui-list-item-content">Xiaomi</div>
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+							<a href="?#mi6" onclick="location='?#mi6';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI6</li>
+							</a>
+							<a href="?#mi6x" onclick="location='?#mi6x';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI6X</li>
+							</a>
+							<a href="?#mi8" onclick="location='?#mi8';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI8</li>
+							</a>
+							<a href="?#mi8ud" onclick="location='?#mi8ud';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI8 UD</li>
+							</a>
+							<a href="?#mi8exp" onclick="location='?#mi8exp';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI8 Exp</li>
+							</a>
+							<a href="?#mi9" onclick="location='?#mi9';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI9</li>
+							</a>
+							<a href="?#mi9se" onclick="location='?#mi9se';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI9 SE</li>
+							</a>
+							<a href="?#mi9pro" onclick="location='?#mi9pro';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI9 Pro</li>
+							</a>
+							<a href="?#cc9" onclick="location='?#cc9';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MI CC9</li>
+							</a>
+							<a href="?#mix2" onclick="location='?#mix2';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MIX2</li>
+							</a>
+							<a href="?#mix2s" onclick="location='?#mix2s';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MIX2S</li>
+							</a>
+							<a href="?#mix3" onclick="location='?#mix3';location.reload()">
+								<li class="mdui-list-item mdui-ripple">MIX3</li>
+							</a>
+							<a href="?#minote3" onclick="location='?#minote3';location.reload()">
+								<li class="mdui-list-item mdui-ripple">Note 3</li>
+							</a>
+						</ul>
+					</li>
+
+					<li class="mdui-collapse-item">
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+							<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue-grey">phone_android</i>
+							<div class="mdui-list-item-content">Redmi</div>
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+						</div>
+						<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+							<a href="?#rm3sx" onclick="location='?#rm3sx';location.reload()">
+								<li class="mdui-list-item mdui-ripple">3S/3X</li>
+							</a>
+							<a href="?#rm4a" onclick="location='?#rm4a';location.reload()">
+								<li class="mdui-list-item mdui-ripple">4A</li>
+							</a>
+							<a href="?#note3pro" onclick="location='?#note3pro';location.reload()">
+								<li class="mdui-list-item mdui-ripple">Note3 Pro Qualcomm</li>
+							</a>
+							<a href="?#note4x" onclick="location='?#note4x';location.reload()">
+								<li class="mdui-list-item mdui-ripple">Note4(X) Qualcomm</li>
+							</a>
+							<a href="?#note7" onclick="location='?#note7';location.reload()">
+								<li class="mdui-list-item mdui-ripple">Note7</li>
+							</a>
+							<a href="?#note7pro" onclick="location='?#note7pro';location.reload()">
+								<li class="mdui-list-item mdui-ripple">Note7 Pro</li>
+							</a>
+							<a href="?#k20" onclick="location='?#k20';location.reload()">
+								<li class="mdui-list-item mdui-ripple">K20</li>
+							</a>
+							<a href="?#k20pro" onclick="location='?#k20pro';location.reload()">
+								<li class="mdui-list-item mdui-ripple">K20 Pro</li>
+							</a>
+							<a href="?#k305g" onclick="location='?#k305g';location.reload()">
+								<li class="mdui-list-item mdui-ripple">K30 5G</li>
+							</a>
+
+						</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+
+		</div>
+
+		
+
+		<div class="mdui-container-fluid mdui-typo">
+			
+			
+			<div id="home" name="home" class="margin-top-150">
+					<br/>
+			
+			<div class="mdui-card-primary">
+			<div class="mdui-card-primary-title" style="color:#607d8b">Welcome To GearMagic's Website</div>
+			<div style="visibility:hidden;height:10px"></div>
+			<span>▎</span><span id="k-text"></span>
+			</div>
+			
+			
+			<div class="mdui-divider" style="width: 90%;"></div>
+			<br/>
+			<div class="mdui-row-xs-2 mdui-hidden-xs mdui-container-fluid">
+			
+			<div class="mdui-row">
+			
+			
+			<div class="mdui-col">
+			<div class="mdui-card mdui-hoverable" style="height:290px">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/07/12nA1S.png">
+                <div class="mdui-card-header-title">GearMagic</div>
+                <div class="mdui-card-header-subtitle">Fast.Smooth.Lite.Stable</div>
+              </div>
+			  <div class="mdui-card-header">
+			    <i class="mdui-card-header-avatar mdui-icon material-icons">access_time</i>
+                <div class="mdui-card-header-title">创立时间</div>
+                <div class="mdui-card-header-subtitle">2019-03-01</div>
+              </div>
+			  <div class="mdui-card-header">
+			    <i class="mdui-icon material-icons mdui-card-header-avatar">people</i>
+                <div class="mdui-card-header-title">项目人数</div>
+                <div class="mdui-card-header-subtitle">7</div>
+              </div>
+			  <div class="mdui-card-header">
+			    <i class="mdui-icon material-icons mdui-card-header-avatar">phonelink_setup</i>
+                <div class="mdui-card-header-title">已适配机型数量</div>
+                <div class="mdui-card-header-subtitle">22</div>
+              </div>
+              <div class="mdui-card-media">
+                <!--<img src="https://s2.ax1x.com/2020/02/07/12n49f.png">-->
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+            
+			</div>
+			
+			
+			
+			
+
+			
+			</div>
+			
+			
+			<div class="mdui-col">
+			<div class="mdui-card mdui-hoverable" style="height:290px">
+              
+              
+              <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">公告板</div>
+                
+              </div>
+              <div class="mdui-card-content">暂无公告</div>
+              
+            </div>
+			
+			
+			
+			
+			
+			</div>
+			
+			
+			</div>
+			</div>
+
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h3><font color="#607d8b">ROM截图</font></h3></div>
+				<div class="mdui-panel-item-body">
+					<br/>
+					<img class="aligncenter size-full wp-image-1577 mdui-img-fluid"
+						 src="https://s2.ax1x.com/2020/02/08/1W0oMF.png" alt="" width="100%" />
+					<center>ROM截图第一张来自酷安@英雄崎凛</center>
+					<center>第二、三、四张来自酷安@StairJumperWei</center>
+				</div>
+			</div>
+			
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h3><font color="#607d8b">ROM介绍</font></h3></div>
+				<div class="mdui-panel-item-body">
+					<br/>
+					<div class="mdui-typo">
+						<ul>
+						<li>去广告</li>
+						<li>内置 Magisk-20.0</li>
+						<li>适度精简</li>
+						<li>快速开机（该功能仅在Android 9生效）</li>
+						<li>网速秒刷新</li>
+						<li>全局 Deodex</li>
+						<li>全局 Zipalign</li>
+						<li>去除状态栏上层显示通知</li>
+						<li>核心破解</li>
+						<li>破解 卡米/DATA/BOOT加密 等</li>
+						<li>内置 Busybox</li>
+						<li>更改 Selinux 模式为 Permissive</li>
+						<li>高级重启菜单</li>
+						<li>GearMagic 开机动画</li>
+						<li><strong>内置 SenaKernel</strong></li>
+						<p>   (Redmi Note7 Pro 独享 且 GearMagic <strong>独占</strong>该内核一段时间）</p>
+						</ul>
+					</div>
+				</div>
+			</div>
+					
+
+
+
+					
+
+				</div>
+				
+				
+
+				
+				<div id="gmlite" class="margin-top-150">
+				<br/>
+				<div class="mdui-container-fluid">
+				<div class="mdui-row-xs-2 mdui-hidden-sm-down">
+					<div class="mdui-row">
+						<div class="mdui-col">
+							<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable" style="height:360px">
+								<div class="mdui-panel-item-header">
+									<h3><font color="#607d8b">什么是GearMagic Lite?</font></h3>
+								</div>
+								<div class="mdui-card-content">
+									<p>可在<strong>MIUI官方系统内</strong>刷入模块来达到官改效果的<strong>Magisk模块</strong></p><p>包含GearMagic官改包的<strong>大多数特性</strong>以及更多的灵活性</p>
+									<p>目前可追溯到最早的公开版 GearMagic Lite 发布日期为 2019-04-27 <a href="https://www.coolapk.com/feed/11447655?shareKey=M2I1Y2ZhN2I3MGQyNWU0ZjZlZjU~&shareUid=823226&shareFrom=com.coolapk.market_10.0-beta4">点我查看</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="mdui-col">
+							<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable" style="height:360px">
+								<div class="mdui-panel-item-header">
+									<h3><font color="#607d8b">GearMagic Lite的发展历程</font></h3>
+								</div>
+								<div class="mdui-card-content mdui-typo">
+									<ul>
+										<li>GearMagic Lite | 1.0</li>
+										<p>通过TWRP刷入官改修改内容增量包来实现</p>
+										<li style="visibility:hidden"></li>
+										<li>GearMagic Lite | 2.0</li>
+										<p>通过 Magisk Manager 刷入官改修改内容增量包<strong>模块</strong>来实现，<strong>灵活性</strong>升级</p>
+										<li style="visibility:hidden"></li>
+										<li>GearMagic Lite | 3.0</li>
+										<p>通过 Magisk Manager 刷入<strong>自选型</strong>模块，功能自定义DIY选择性刷入，灵活性相比 2.0 有所提高</p>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="mdui-row-xs-2 mdui-hidden-md-up">
+							<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+								<div class="mdui-panel-item-header">
+									<h3><font color="#607d8b">什么是GearMagic Lite?</font></h3>
+								</div>
+								<div class="mdui-card-content">
+									<p>可在<strong>MIUI官方系统内</strong>刷入模块来达到官改效果的<strong>Magisk模块</strong></p><p>包含GearMagic官改包的<strong>大多数特性</strong>以及更多的灵活性</p>
+									<p>目前可追溯到最早的公开版 GearMagic Lite 发布日期为 2019-04-27 <a href="https://www.coolapk.com/feed/11447655?shareKey=M2I1Y2ZhN2I3MGQyNWU0ZjZlZjU~&shareUid=823226&shareFrom=com.coolapk.market_10.0-beta4">点我查看</a></p>
+								</div>
+							</div>
+						
+							<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+								<div class="mdui-panel-item-header">
+									<h3><font color="#607d8b">GearMagic Lite的发展历程</font></h3>
+								</div>
+								<div class="mdui-card-content mdui-typo">
+									<ul>
+										<li>GearMagic Lite | 1.0</li>
+										<p>通过TWRP刷入官改修改内容增量包来实现</p>
+										<li style="visibility:hidden"></li>
+										<li>GearMagic Lite | 2.0</li>
+										<p>通过 Magisk Manager 刷入官改修改内容增量包<strong>模块</strong>来实现，<strong>灵活性</strong>升级</p>
+										<li style="visibility:hidden"></li>
+										<li>GearMagic Lite | 3.0</li>
+										<p>通过 Magisk Manager 刷入<strong>自选型</strong>模块，功能自定义DIY选择性刷入，灵活性相比 2.0 有所提高</p>
+									</ul>
+								</div>
+							</div>
+						
+				</div>
+				
+				
+				
+				</div>
+			
+				
+				</div>
+				
+			<div id="aboutgm" class="margin-top-150 mdui-container-fluid">
+			<div class="mdui-hidden-sm-up margin-top-150">
+				<br/>
+				<h3 class="mdui-typo"><font color="#607d8b">Members</font></h3>
+					<blockquote class="wp-block-quote">
+						<span id="k-text"></span>
+					</blockquote>
+
+				
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">「だってアタシのヒーロー。」</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <br>
+			
+         <div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1547343067&amp;s=640">
+                <div class="mdui-card-header-title">Cheng</div>
+                <div class="mdui-card-header-subtitle">Kenzo / Mido Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">はるか広がる明日を 見つめ続ける 永遠の絆。</div>
+              <div class="mdui-card-actions">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/2537013">COOLAPK</a></button>
+				<button class="mdui-btn mdui-ripple"><a href="https://t.me/Cheng_186">Telegram</a></button>
+                
+              </div>
+            </div>
+			
+			<br>
+            <div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/09/1h4FBR.png">
+                <div class="mdui-card-header-title">extmool</div>
+                <div class="mdui-card-header-subtitle">Rolex Maintainer & Website production</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">The Power of Knowledge Engineering.</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/1065956">COOLAPK</a></button>
+                
+              </div>
+            </div>
+			
+			<br>
+            <div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1257127698&amp;s=640">
+                <div class="mdui-card-header-title">FlowerMoon</div>
+                <div class="mdui-card-header-subtitle">Dipper <s>Alpha</s> Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">Time is always too long,long to palpitate.</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/2188408">COOLAPK</a></button>
+                
+              </div>
+            </div>
+			
+			
+			<br>
+            <div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://blog.kiriki.top/wp-content/uploads/2020/01/g.jpg">
+                <div class="mdui-card-header-title">kmou424</div>
+                <div class="mdui-card-header-subtitle">Violet Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">私は世界で最高の自分ではありません。</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/772916">COOLAPK</a></button>
+                
+              </div>
+            </div>
+			
+			<br>
+            <div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://qlogo4.store.qq.com/qzone/1265230431/1265230431/50?1564298281">
+                <div class="mdui-card-header-title">mouZhe</div>
+                <div class="mdui-card-header-subtitle">Ursa / Wayne / Jason Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">只会仰仗大佬的小钢筋一枚</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/1482028">COOLAPK</a></button>
+                
+              </div>
+            </div>
+			
+			<br>
+            <div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/10/15unaD.jpg">
+                <div class="mdui-card-header-title">Nosafari</div>
+                <div class="mdui-card-header-subtitle">Picasso Maintainer & Server Operator</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">当你看到我发帖的时候基本上我一定是换了新手机</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/2309827">COOLAPK</a></button>
+                
+              </div>
+            </div>
+			
+			<br>
+            <div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://qlogo4.store.qq.com/qzone/1732650691/1732650691/50?1568386475">
+                <div class="mdui-card-header-title">PigLog</div>
+                <div class="mdui-card-header-subtitle">Land Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu mdui-typo">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">CLANNADを書いて、人生を読みます.</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/832461">COOLAPK</a></button>
+                
+              </div>
+            </div>
+			
+			<br/>
+			
+			<div class="mdui-divider"></div>
+			<div class="mdui-typo-headline"><font color="#607d8b">Thanks</font></div>
+			
+			<div class="mdui-card mdui-hoverable">
+				<div class="mdui-card-header">
+					<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/23/3llEy8.png" />
+					<div class="mdui-card-header-title">Shenlhz</div>
+					<div class="mdui-card-header-subtitle">ROM Developer</div>
+				</div>
+				<div class="mdui-card-header">
+					<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/22/3MpVKO.jpg" />
+					<div class="mdui-card-header-title">果酱稽</div>
+					<div class="mdui-card-header-subtitle">Android Developer</div>
+				</div>
+				<div class="mdui-card-header">
+					<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/22/3MpGM8.jpg" />
+					<div class="mdui-card-header-title">LTDSA</div>
+					<div class="mdui-card-header-subtitle">Android / Windows / Web Developer</div>
+				</div>
+				<div class="mdui-card-header">
+					<img class="mdui-card-header-avatar" src="https://download.mokeedev.com/download-assets/images/favicon/favicon-152-precomposed.png" />
+					<div class="mdui-card-header-title">Mokee</div>
+					<div class="mdui-card-header-subtitle">Mokee OpenSource Project</div>
+				</div>
+				<div class="mdui-card-header">
+					<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/22/3MPpVg.png" />
+					<div class="mdui-card-header-title">MDUI</div>
+					<div class="mdui-card-header-subtitle">一套 Material Design 的前端框架</div>
+				</div>
+				<div class="mdui-card-header">
+					<img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=137451824&amp;s=640" />
+					<div class="mdui-card-header-title">Xiaowan</div>
+					<div class="mdui-card-header-subtitle">ROM Developer</div>
+				</div>
+				<div class="mdui-card-header">
+					<img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1937656307&amp;s=640" />
+					<div class="mdui-card-header-title">Joker.H</div>
+					<div class="mdui-card-header-subtitle">ROM Developer</div>
+				</div>
+				<div class="mdui-card-header">
+					<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/22/3MbYi8.png" />
+					<div class="mdui-card-header-title">UniRange基金</div>
+					<div class="mdui-card-header-subtitle">Unicorn & Orange公益基金</div>
+				</div>
+				<div class="mdui-card-header">
+					<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/28/3D7gtP.png" />
+					<div class="mdui-card-header-title">Kiyoi Bread</div>
+					<div class="mdui-card-header-subtitle">キラキラドキドキ的来GT帮忙的美工</div>
+				</div>
+				<div class="mdui-card-header">
+					<img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=841474544&amp;s=640" />
+					<div class="mdui-card-header-title">LittleTurtle</div>
+					<div class="mdui-card-header-subtitle">Simplicity Founder & Leader</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			</div>
+			
+			
+			
+			
+			
+			
+			<div class="mdui-hidden-xs-down margin-top-150 mdui-container-fluid">
+			
+			<br/>
+			
+			<h3 class="mdui-typo"><font color="#607d8b">Members</font></h3>
+					<blockquote class="wp-block-quote">
+						<span id="k-text"></span>
+					</blockquote>
+
+			
+				
+				
+			<div class="mdui-row-xs-3 mdui-row-xl-4">
+			<div class="mdui-row">
+				<div class="mdui-col">
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+						<div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+						<div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+						</div>
+						<div class="mdui-card-media">
+                
+						<div class="mdui-card-menu">
+							
+						</div>
+						</div>
+              
+					<div class="mdui-card-content">「だってアタシのヒーロー。」</div>
+					<div class="mdui-card-actions mdui-typo">
+							<button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+							<button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+							
+					</div>
+					</div>
+				</div>
+				
+				
+				<div class="mdui-col">
+				<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1547343067&amp;s=640">
+                <div class="mdui-card-header-title">Cheng</div>
+                <div class="mdui-card-header-subtitle">Kenzo / Mido Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">はるか広がる明日を 見つめ続ける 永遠の絆。</div>
+              <div class="mdui-card-actions">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/2537013">COOLAPK</a></button>
+				<button class="mdui-btn mdui-ripple"><a href="https://t.me/Cheng_186">Telegram</a></button>
+                
+              </div>
+            </div>
+				</div>
+				
+				
+			<div class="mdui-col">
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/09/1h4FBR.png">
+                <div class="mdui-card-header-title">extmool</div>
+                <div class="mdui-card-header-subtitle">Rolex Maintainer & Website production</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">The Power of Knowledge Engineering.</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/1065956">COOLAPK</a></button>
+                
+              </div>
+            </div>
+			
+			</div>
+				
+				
+				
+				
+			</div>
+			
+			<br/>
+			<div class="mdui-row">
+				<div class="mdui-col">
+					<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1257127698&amp;s=640">
+                <div class="mdui-card-header-title">FlowerMoon</div>
+                <div class="mdui-card-header-subtitle">Dipper <s>Alpha</s> Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">Time is always too long,long to palpitate.</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/2188408">COOLAPK</a></button>
+                
+              </div>
+            </div>
+				</div>
+			
+			
+				<div class="mdui-col">
+				<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://blog.kiriki.top/wp-content/uploads/2020/01/g.jpg">
+                <div class="mdui-card-header-title">kmou424</div>
+                <div class="mdui-card-header-subtitle">Violet Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">私は世界で最高の自分ではありません。</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/772916">COOLAPK</a></button>
+                
+              </div>
+            </div>
+				</div>
+				
+				<div class="mdui-col">
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://qlogo4.store.qq.com/qzone/1265230431/1265230431/50?1564298281">
+                <div class="mdui-card-header-title">mouZhe</div>
+                <div class="mdui-card-header-subtitle">Ursa / Wayne / Jason Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">只会仰仗大佬的小钢筋一枚</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/1482028">COOLAPK</a></button>
+                
+              </div>
+            </div>
+			</div>
+			
+			
+			</div>
+			
+			<br/>
+			
+			<div class="mdui-row">
+			<div class="mdui-col">
+            <div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/10/15unaD.jpg">
+                <div class="mdui-card-header-title">Nosafari</div>
+                <div class="mdui-card-header-subtitle">Picasso Maintainer & Server Operator</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">当你看到我发帖的时候基本上我一定是换了新手机</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/2309827">COOLAPK</a></button>
+                
+              </div>
+            </div>
+			</div>
+			
+				<div class="mdui-col">
+					<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://qlogo4.store.qq.com/qzone/1732650691/1732650691/50?1568386475">
+                <div class="mdui-card-header-title">PigLog</div>
+                <div class="mdui-card-header-subtitle">Land Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu mdui-typo">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">CLANNADを書いて、人生を読みます.</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/832461">COOLAPK</a></button>
+                
+              </div>
+            </div>
+				</div>
+				
+				
+			</div>
+			
+			
+			
+			<br/>
+			<div class="mdui-divider"></div>
+			
+			<div class="mdui-typo-headline"><font color="#607d8b">Thanks</font></div>
+			<div class="mdui-row-xs-3  mdui-container-fluid">
+				<div class="mdui-row">
+					<div class="mdui-col">
+						<div class="mdui-card mdui-hoverable">
+							<div class="mdui-card-header">
+								<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/23/3llEy8.png" />
+								<div class="mdui-card-header-title">Shenlhz</div>
+								<div class="mdui-card-header-subtitle">ROM Developer</div>
+							</div>
+						</div>
+					</div>
+				
+	
+					<div class="mdui-col">
+						<div class="mdui-card mdui-hoverable">
+							<div class="mdui-card-header">
+								<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/22/3MpVKO.jpg" />
+								<div class="mdui-card-header-title">果酱稽</div>
+								<div class="mdui-card-header-subtitle">Android Developer</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mdui-col">
+						<div class="mdui-card mdui-hoverable">
+							<div class="mdui-card-header">
+								<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/22/3MpGM8.jpg" />
+								<div class="mdui-card-header-title">LTDSA</div>
+								<div class="mdui-card-header-subtitle">Android / Windows / Web Developer</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<br/>
+				<div class="mdui-row">
+					<div class="mdui-col">
+						<div class="mdui-card mdui-hoverable">
+							<div class="mdui-card-header">
+								<img class="mdui-card-header-avatar" src="https://download.mokeedev.com/download-assets/images/favicon/favicon-152-precomposed.png" />
+								<div class="mdui-card-header-title">Mokee</div>
+								<div class="mdui-card-header-subtitle">Mokee OpenSource Project</div>
+							</div>
+						</div>
+					</div>
+				
+	
+					<div class="mdui-col">
+						<div class="mdui-card mdui-hoverable">
+							<div class="mdui-card-header">
+								<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/22/3MPpVg.png" />
+								<div class="mdui-card-header-title">MDUI</div>
+								<div class="mdui-card-header-subtitle">一套 Material Design 的前端框架</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="mdui-col">
+						<div class="mdui-card mdui-hoverable">
+							<div class="mdui-card-header">
+								<img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=137451824&amp;s=640" />
+								<div class="mdui-card-header-title">Xiaowan</div>
+								<div class="mdui-card-header-subtitle">ROM Developer</div>
+							</div>
+						</div>
+					</div>
+
+					
+
+				</div>
+				<br/>
+				<div class="mdui-row">
+					<div class="mdui-col">
+						<div class="mdui-card mdui-hoverable">
+							<div class="mdui-card-header">
+								<img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1937656307&amp;s=640" />
+								<div class="mdui-card-header-title">Joker.H</div>
+								<div class="mdui-card-header-subtitle">ROM Developer</div>
+							</div>
+						</div>
+					</div>
+
+					
+					
+					<div class="mdui-col">
+						<div class="mdui-card mdui-hoverable">
+							<div class="mdui-card-header">
+								<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/22/3MbYi8.png" />
+								<div class="mdui-card-header-title">UniRange基金</div>
+								<div class="mdui-card-header-subtitle">Unicorn & Orange公益基金</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mdui-col">
+						<div class="mdui-card mdui-hoverable">
+							<div class="mdui-card-header">
+								<img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/28/3D7gtP.png" />
+								<div class="mdui-card-header-title">Kiyoi Bread</div>
+								<div class="mdui-card-header-subtitle">キラキラドキドキ的来GT帮忙的美工</div>
+							</div>
+						</div>
+					</div>
+
+				  
+				    </div>
+					<br/>
+					<div class="mdui-row">
+					<div class="mdui-col">
+						<div class="mdui-card mdui-hoverable">
+							<div class="mdui-card-header">
+								<img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=841474544&amp;s=640" />
+								<div class="mdui-card-header-title">LittleTurtle</div>
+								<div class="mdui-card-header-subtitle">Simplicity Founder & Leader</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+			</div>
+			</div>
+			</div>
+			
+			<div id="question" class="margin-top-150">
+				<br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/24/38dDER.png" alt="38dDER.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">中文</a>
+							<button class="mdui-btn mdui-ripple" disabled>ENGLISH</button>
+							<button class="mdui-btn mdui-ripple" disabled>日本語</button>
+							<button class="mdui-btn mdui-ripple" disabled>한국어</button>
+						</div>
+					</div>
+					<br>
+			
+			<div class="mdui-card mdui-hoverable">
+              <blockquote class="mdui-m-l-2 mdui-m-r-1">
+    <footer><h5>为什么我刷了「GearMagic」之后 耗电量增加 / 续航变好 了啊</h5></footer>
+  </blockquote>
+              <div class="mdui-m-l-2"><h6>首先，目前的 GearMagic <mark>没有内置任何调度，温控</mark></h6></div>
+              <br>
+            </div>
+            
+            </br>
+            
+            <div class="mdui-card mdui-hoverable">
+              <blockquote class="mdui-m-l-2 mdui-m-r-1">
+    <footer><h5>刷入时卡住了 / 错误7 怎么办？</h5></footer>
+  </blockquote>
+              <div class="mdui-m-l-2"><h6>首先更换TWRP，推荐使用<a href="http://www.runoob.com">WZSX150</a>大佬编译的TWRP<BR>如果还不行请及时反馈</h6></div>
+              <br>
+			</div>
+			
+			<BR>
+
+				<div class="mdui-card mdui-hoverable">
+					<blockquote class="mdui-m-l-2 mdui-m-r-1">
+    <footer><h5></h5></footer>
+  </blockquote>
+					<div class="mdui-m-l-2"><h6>哦 <br><del>草泥马，三天之内杀了你，看到没有小逼崽子，泥马勒个抽碧草泥马德，把你骨灰都给你扬喽</del></h6></div>
+					<br>
+				  </div>
+            
+			</div>
+			
+			
+			
+				
+				<!--以下为机型列表-->
+					
+			<div id="mi6" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1fsV3t.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 835</p>
+					<p>内存容量: 4/6GB of LP-DDR4X</p>
+					<p>存储容量: 64/128GB</p>
+					<p>电池容量: 3350 mAh</p>
+					<p>屏幕信息: 5.15 inch, 1920x1080 pixel</p>
+					<p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+						
+					
+				</div> 
+		
+		
+		
+		<div id="mi8" class="margin-top-150">
+		<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1hC3gH.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 845</p>
+					<p>内存容量: 6/8GB of LP-DDR4X</p>
+					<p>存储容量: 64/128/256GB</p>
+					<p>电池容量: 3400 mAh</p>
+					<p>屏幕信息: 6.21 inch, 1080x2248 pixel</p>
+					<p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+						
+					
+				</div> 
+
+			<div id="mi9" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1hPUy9.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 855</p>
+                    <p>内存容量: 6/8/12GB of LP-DDR4X</p>
+                    <p>存储容量: 128/256GB</p>
+                    <p>电池容量: 3300 mAh</p>
+                    <p>屏幕信息: 6.39 inch, 2340x1080 pixel</p>
+                    <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+					
+						
+					
+				</div> 
+			
+			<div id="mix2" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1hP0dx.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 835</p>
+                      <p>内存容量: 6/8GB of LP-DDR4X</p>
+                      <p>存储容量: 64/128/256GB</p>
+                      <p>电池容量: 3400 mAh</p>
+                      <p>屏幕信息: 5.99 inch, 2160x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+						
+					
+				</div> 
+			
+			<div id="mix2s" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1hPYz4.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 845</p>
+                      <p>内存容量: 6/8GB of LP-DDR4X</p>
+                      <p>存储容量: 64/128/256GB</p>
+                      <p>电池容量: 3400 mAh</p>
+                      <p>屏幕信息: 5.99 inch, 2160x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+						
+					
+				</div> 
+			
+			
+			<div id="k20pro" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1hPaLR.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 855</p>
+                      <p>内存容量: 6/8GB of LP-DDR4X</p>
+                      <p>存储容量: 64/128/256GB</p>
+                      <p>电池容量: 4000 mAh</p>
+                      <p>屏幕信息: 6.39 inch, 2340x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+					
+				</div> 
+			
+			<div id="mi9pro" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1hPGJU.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 855 Plus</p>
+                      <p>内存容量: 8/12GB of LP-DDR4X</p>
+                      <p>存储容量: 128/256/512GB</p>
+                      <p>电池容量: 4000 mAh</p>
+                      <p>屏幕信息: 6.39 inch, 2340x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+						
+					
+				</div> 
+			
+			<div id="mi9se" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1hPwe1.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 712</p>
+                      <p>内存容量: 6GB</p>
+                      <p>存储容量: 64/128GB</p>
+                      <p>电池容量: 3070 mAh</p>
+                      <p>屏幕信息:  5.97 inch, 2340 x 1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+				
+					
+						
+					
+				</div> 
+			
+			<div id="rm3sx" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1hWtCF.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://qlogo4.store.qq.com/qzone/1732650691/1732650691/50?1568386475">
+                <div class="mdui-card-header-title">PigLog</div>
+                <div class="mdui-card-header-subtitle">Land Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">CLANNADを書いて、人生を読みます.</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/832461">COOLAPK</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 430</p>
+                      <p>内存容量: 2/3GB of LP-DDR3</p>
+                      <p>存储容量: 16/32GB</p>
+                      <p>电池容量: 4100 mAh</p>
+                      <p>屏幕信息: 5.0 inch, 1280x720 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div>                
+			</div>
+				
+			
+			
+			<div id="rm4a" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/15/1x8lwt.jpg" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/09/1h4FBR.png">
+                <div class="mdui-card-header-title">extmool</div>
+                <div class="mdui-card-header-subtitle">Rolex Maintainer & Website production</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">The Power of Knowledge Engineering.</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/1065956">COOLAPK</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 425</p>
+                      <p>内存容量: 2/3GB of LP-DDR3</p>
+                      <p>存储容量: 16/32GB</p>
+                      <p>电池容量: 3120 mAh</p>
+                      <p>屏幕信息: 5.0 inch, 1280x720 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div>                
+			</div>
+			
+			
+			
+			<div id="note3pro" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1h5Fxg.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&nk=1547343067&s=640">
+                <div class="mdui-card-header-title">Cheng</div>
+                <div class="mdui-card-header-subtitle">Kenzo / Mido Maintainer</div>
+              </divdasw
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">はるか広がる明日を 見つめ続ける 永遠の絆。</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/832461">COOLAPK</a></button>
+				<button class="mdui-btn mdui-ripple"><a href="https://t.me/Cheng_186">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 650</p>
+                      <p>内存容量: 2G/3GB</p>
+                      <p>存储容量: 16                                                                                                                                                                                                                                                                     G/32GB</p>
+                      <p>电池容量: 4000 mAh</p>
+                      <p>屏幕信息: 5.5 inch, 1920x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				               
+			</div>    
+				
+					
+						
+					
+				</div> 
+			
+			<div id="note7pro" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/09/1ho1b9.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://blog.kiriki.top/wp-content/uploads/2020/01/g.jpg">
+                <div class="mdui-card-header-title">kmou424</div>
+                <div class="mdui-card-header-subtitle">Violet Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">私は世界で最高の自分ではありません。</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/772916">COOLAPK</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 675</p>
+                      <p>内存容量: 6GB</p>
+                      <p>存储容量: 128GB</p>
+                      <p>电池容量: 4000 mAh</p>
+                      <p>屏幕信息: 6.3 inch, 2340x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				               
+			</div>   
+					
+						
+					
+			</div> 
+			
+			<div id="cc9" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/10/14g7fe.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 710</p>
+                      <p>内存容量: 6GB</p>
+                      <p>存储容量: 64/128GB</p>
+                      <p>电池容量: 4000 mAh</p>
+                      <p>屏幕信息: 6.39 inch, 2340x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+						
+					
+				</div> 
+			
+			<div id="note4x" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/10/14gTYD.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&nk=1547343067&s=640">
+                <div class="mdui-card-header-title">Cheng</div>
+                <div class="mdui-card-header-subtitle">Kenzo / Mido Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">はるか広がる明日を 見つめ続ける 永遠の絆。</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/832461">COOLAPK</a></button>
+				<button class="mdui-btn mdui-ripple"><a href="https://t.me/Cheng_186">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 625</p>
+                      <p>内存容量: 3/4GB</p>
+                      <p>存储容量: </p>
+                      <p>电池容量: 4100mAh</p>
+                      <p>屏幕信息: 5.5 inch, 1920x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div>   
+				
+					
+						
+					
+				</div> 
+			
+			<div id="mi8exp" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/10/14gbSH.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://qlogo4.store.qq.com/qzone/1265230431/1265230431/50?1564298281">
+                <div class="mdui-card-header-title">mouZhe</div>
+                <div class="mdui-card-header-subtitle">Ursa / Wayne / Jason Maintainer</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">只会仰仗大佬的小钢筋一枚</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/1482028">COOLAPK</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 845AIE</p>
+                      <p>内存容量: 6/8GB</p>
+                      <p>存储容量: 128GB</p>
+                      <p>电池容量: 4100mAh</p>
+                      <p>屏幕信息: 6.21 inch, 2248x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+						
+					
+				</div> 
+			
+			<div id="k305g" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/10/15BQY9.jpg" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="https://s2.ax1x.com/2020/02/10/15unaD.jpg">
+                <div class="mdui-card-header-title">Nosafari</div>
+                <div class="mdui-card-header-subtitle">Picasso Maintainer & Server Operator</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">当你看到我发帖的时候基本上我一定是换了新手机</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/2309827">COOLAPK</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 765G</p>
+                      <p>内存容量: 6/8GB</p>
+                      <p>存储容量: 64/128/256GB</p>
+                      <p>电池容量: 4500mAh</p>
+                      <p>屏幕信息: 6.67 inch, 2400x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+						
+					
+				</div> 
+			
+			<div id="mix3" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/11/1IInVH.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 845</p>
+                      <p>内存容量: 6/8/10GB of LP-DDR4X</p>
+                      <p>存储容量: 128/256GB</p>
+                      <p>电池容量: 3200 mAh</p>
+                      <p>屏幕信息: 6.39 inch, 2340x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+						
+					
+				</div> 
+				
+				
+				<div id="mi8ud" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/12/1Huq8U.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 845AIE</p>
+					<p>内存容量: 6/8GB of LP-DDR4X</p>
+					<p>存储容量: 128GB</p>
+					<p>电池容量: 3000 mAh</p>
+					<p>屏幕信息: 6.21 inch, 2248x1080 pixel</p>
+					<p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+						
+					
+				</div>
+				
+				<div id="note7" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/12/1HMkF0.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>处理器: Qualcomm® Snapdragon™ 660</p>
+                      <p>内存容量: 3/4/6GB</p>
+                      <p>存储容量: 32/64GB</p>
+                      <p>电池容量: 4000 mAh</p>
+                      <p>屏幕信息:  6.3 inch, 2340x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+					
+						
+					
+				</div>
+				
+				<div id="k20" class="margin-top-150">
+			<br/><br/>
+					<div class="mdui-card mdui-hoverable">
+						<div class="mdui-card-media">
+						<!-- 使用图床代替本地图片 -->
+							<img src="https://s2.ax1x.com/2020/02/13/1LEcSe.png" alt="1fsV3t.png" border="0" />
+						</div>
+						
+						<div class="mdui-card-actions link mdui-typo">
+							<a class="mdui-btn mdui-ripple mdui-text-color-theme-accent" href="https://twrp.me/Devices/Xiaomi/">TWRP</a>
+							<button class="mdui-btn mdui-ripple" disabled>Magisk</button>
+						</div>
+					</div>
+					<br>
+			<div class="mdui-card mdui-hoverable">
+              <div class="mdui-card-header">
+                <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&amp;nk=1151927369&amp;s=640">
+                <div class="mdui-card-header-title">Eiyuuzaki Rin</div>
+                <div class="mdui-card-header-subtitle">Leader & Founder & Operator & Art</div>
+              </div>
+              <div class="mdui-card-media">
+                
+                <div class="mdui-card-menu">
+                  
+                </div>
+              </div>
+              
+              <div class="mdui-card-content">天地弹指间 俯仰梦中身</div>
+              <div class="mdui-card-actions mdui-typo">
+                <button class="mdui-btn mdui-ripple"><a href="http://www.coolapk.com/u/823226">COOLAPK</a></button>
+                <button class="mdui-btn mdui-ripple"><a href="https://t.me/Hero2333">Telegram</a></button>
+                
+              </div>
+            </div>
+            <!-- 机型配置 -->
+           <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>硬件参数</h4></div>
+				<div class="mdui-panel-item-body">
+					 <p>处理器: Qualcomm® Snapdragon™ 730</p>
+                      <p>内存容量: 6GB/8GB</p>
+                      <p>存储容量: 64GB/128GB/256GB of UFS 2.1</p>
+                      <p>电池容量: 4000 mAh</p>
+                      <p>屏幕信息: 6.3 inch, 2340x1080 pixel</p>
+                      <p>处理器架构: arm64</p>
+				</div>
+			</div>
+			<!-- 版本信息 -->   
+			<div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+				<div class="mdui-panel-item-header"><h4>版本说明</h4></div>
+				<div class="mdui-panel-item-body">
+					<p>开发版（Developer）：适合追求版本稳定且又能每周五体验到新功能的用户，功能更新相对快于稳定版。</p>
+					<p><s>体验版（Alpha）：是用户中最发烧人群的聚集地，适合足够“发烧”的用户，功能更新速度较快，较先体验新功能。</s>（MIUI已取消体验版）</p>
+					<p>稳定版（Stable）：适合追求版本稳定且不频繁更新的用户，更新速度和以上版本相对较慢。</p>
+				</div>
+				</div>      
+				<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-table-fluid mdui-hidden-sm-down  mdui-hoverable mdui-typo">
+						<table class="mdui-table mdui-table-hoverable">
+							<tr>
+								<th>文件</th><th>状态</th><th>类型</th><th>Android版本</th><th>文件大小</th><th>下载方式</th><th>发布日期</th>
+							</tr>
+							<tr>
+								<td><a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window">GearMagic@Reburn-land_9.4.4-BA2681_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>OneDrive</td><td>2020-02-09</td>
+							</tr>
+							<tr>
+								<td><a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window">GearMagic@Reburn-land_9.4.4-CCF1BA_7.1.2.zip</a><p>MD5:BA2681BC25E329E08709AE0AB8B3A8D5</p></td>
+								<td>已发布</td><td>开发版</td><td>7.1.2</td><td>1.35GB</td><td>百度网盘</td><td>2020-02-09</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="mdui-panel mdui-panel-gapless  mdui-hoverable mdui-hidden-md-up mdui-margin-a-1" mdui-panel>
+						<div class="mdui-panel-item">
+							<div class="mdui-panel-item-header">
+							<div class="mdui-panel-item-title">MIUI 9.4.4</div>
+							<i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+							</div>
+							<div class="mdui-panel-item-body">
+								<p><strong>更新状态</strong>：已发布</p>
+								<p><strong>类型</strong>：开发版</p>
+								<p><strong>Android版本</strong>：7.1.2</p>
+								<p><strong>文件大小</strong>：1.35GB</p>
+								<p><strong>发布日期</strong>：2020-02-09</p>
+								<div class="mdui-panel-item-actions mdui-typo">
+								<a href="https://pan.baidu.com/s/1Tpj3G15oFCAxXByp3viunA" target="view_window"><button class="mdui-btn mdui-ripple">百度网盘</button></a>
+								<a href="https://hitersz-my.sharepoint.com/:u:/g/personal/extmool_hitsz_top/EUVUXNsx0X1Ln4olromFoqoBSN2LoFWR4YDDhBIMBGa-bA?e=ektIsC" target="view_window"><button class="mdui-btn mdui-ripple">OneDrive</button></a>
+							</div>
+							</div>
+							</div>
+						</div>
+					
+						
+					
+				</div> 
+				
+					
+						
+					
+				</div> 
+			
+			
+			<!--以上为机型列表-->
+
+
+
+
+
+			
+		</div>
+		<button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed" onclick="scrollTo(0,0);"><i class="mdui-icon material-icons">arrow_upward</i></button>
+		<footer class=" mdui-color-grey-100" style="margin-top: 30px; text-align: center; padding: 10px; ">
+			<div class="mdui-container">
+				<div class="mdui-row footer-nav">
+				</div>
+				<script>var xmlHttpReq = new XMLHttpRequest();xmlHttpReq.open("GET", "https://v1.jinrishici.com/all.txt", true);xmlHttpReq.send();xmlHttpReq.onreadystatechange = function(){if(xmlHttpReq.readyState === 4 && xmlHttpReq.status === 200){document.getElementById("k-text").innerText = xmlHttpReq.responseText;}else{document.getElementById("k-text").innerText = "Some Thing Went Wrong :-(";}}</script>
+
+				<div class="mdui-divider-light footer-divider"></div>
+				<div class="footer-copyright mdui-typo">Copyright © 2018 - 2020 <a href="http://geekteam.uicp.net/" target="view_window">GeekTeam</a> All rights reserved.</div>
+			</div>
+		</footer>
+	</div>
+	
+	
+	
+	
+
+	</body>
+
+</html>

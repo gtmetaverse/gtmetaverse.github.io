@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <!-- 标题，图标，简介等  -->
+    <!-- Title, Icon, Description, etc. -->
+    <title>GearMagic</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="description" content="The Official Site of GearMagic Project.">
+    <meta name="keywords" content="GearMagic,GeekTeam,gearmagic,geekteam,miuiexperience,MIUIExperience">
+
+    <!-- HTML框架及自适应声明 -->
+    <!-- HTML Framework -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- 来自本地的MDUI CSS -->
+    <!-- MDUI CSS -->
+    <link rel="stylesheet" type="text/css" href="css/mdui.css" />
+    <!--
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"/>
+    -->
+
+    <!-- 来自LTDSA的CSS -->
+    <!-- LTDSA's CSS -->
+    <!--Thanks To @LTDSA-->
+    <link rel="stylesheet" type="text/css" href="css/extra.css" />
+
+</head>
+
+<body id="body" class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-theme-accent-blue">
+    <!-- 工具栏 -->
+    <!-- Toolbar -->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-shadow-2">
+        <div id="toolbar" class="mdui-toolbar mdui-color-white">
+            <a href="javascript:;" id="toggle" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-grey">
+                <i class="mdui-icon material-icons">menu</i>
+            </a>
+            <a href="javascript:;" class="mdui-typo-title">GearMagic</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <!--
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+          <i class="mdui-icon material-icons">search</i>
+        </a>
+        -->
+            <!--
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+          <i class="mdui-icon material-icons">refresh</i>
+        </a>
+        -->
+            <a href="javascript:;" id="main-darkmode" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-grey" onclick="SetDark()">
+                <i class="mdui-icon material-icons">brightness_4</i>
+            </a>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-grey">
+                <i class="mdui-icon material-icons">more_vert</i>
+            </a>
+        </div>
+
+
+        <!-- Tab栏 -->
+        <!-- Tab bar -->
+        <!-- 2022.1.28 感觉Tab栏好像没啥用(还容易出锅) 遂注释掉 -->
+        <!--
+      <div class="mdui-tab mdui-color-white mdui-tab-centered mdui-hidden-lg-up" mdui-tab>
+        <a href="#home" class="mdui-ripple mdui-ripple-grey">首页</a>
+        <a href="#about" class="mdui-ripple mdui-ripple-grey">关于</a>
+        <a href="#miuiexp" class="mdui-ripple mdui-ripple-grey" style="display: none;">MIUIExperience</a>
+        <a href="#gmlite" class="mdui-ripple mdui-ripple-grey" style="display: none;">GearMagic Lite</a>
+      </div>
+      -->
+
+    </div>
+
+    <!-- 抽屉式导航 -->
+    <!-- Drawer -->
+    <div class="mdui-drawer" id="drawer">
+        <ul class="mdui-list">
+            <li class="mdui-subheader">导航</li>
+            <li id="drawer-home" class="mdui-list-item mdui-ripple" onclick="GetPage(0)">
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                <div class="mdui-list-item-content">首页</div>
+            </li>
+            <li id="drawer-about" class="mdui-list-item mdui-ripple" onclick="GetPage(3)">
+                <i class="mdui-list-item-icon mdui-icon material-icons">info_outline</i>
+                <div class="mdui-list-item-content">关于</div>
+            </li>
+            <li class="mdui-subheader">EXTRA</li>
+            <li id="drawer-miuiexp" class="mdui-list-item mdui-ripple" onclick="GetPage(1)">
+                <i class="mdui-list-item-icon mdui-icon material-icons">layers</i>
+                <div class="mdui-list-item-content">MIUI EXPERIENCE</div>
+            </li>
+            <li id="drawer-gmlite" class="mdui-list-item mdui-ripple" onclick="GetPage(2)">
+                <i class="mdui-list-item-icon mdui-icon material-icons">extension</i>
+                <div class="mdui-list-item-content">GearMagic Lite</div>
+            </li>
+            <li class="mdui-subheader">设备名称</li>
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">phone_android</i>
+                    <div class="mdui-list-item-content">Xiaomi</div>
+                    <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+
+                </ul>
+    </div>
+
+    <!-- 网页正文 -->
+    <!-- Main Contents -->
+    <div id="main-contents" class="mdui-container mdui-typo">
+        <div id="main-home" class="mdui-container">
+            <h1>test1</h1>
+            <span class="inline-red">test</span>
+            <p class="div-border-left-red">test</p>
+            <p class="div-border-top-red">test</p>
+            <div class="div-attention mdui-shadow-2">
+                <p class="p-attention-title"><i class="mdui-icon material-icons mdui-text-color-red">warning</i> attention-title</p>
+            </div>
+            <div class="div-tip mdui-shadow-2">
+                <p class="p-attention-title"><i class="mdui-icon material-icons mdui-text-color-blue">notifications</i> attention-title</p>
+            </div>
+        </div>
+        <div id="main-miuiexp" class="mdui-container">
+            <div class="div-attention mdui-shadow-2">
+                <p class="p-attention-title"><i class="mdui-icon material-icons mdui-text-color-red">warning</i>
+                    <BR>刷机有风险，MIUI EXPERIENCE 项目仅提供 ROM 进行系统体验，不对刷机后产生的任何意外负责。
+                    <BR>(部分机型刷机步骤繁琐，请多对步骤，三思而后行。)</p>
+            </div>
+            <div class="mdui-card">
+                <div class="mdui-card-media">
+                    <img src="https://s4.ax1x.com/2022/02/18/H7UePg.jpg" alt="H7UePg.jpg" border="0" />
+                    <div class="mdui-card-media-covered">
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">MIUI EXPERIENCE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+                <div class="mdui-panel-item-header">
+                    <h3>
+                        <font color="#607d8b">简介</font>
+                    </h3>
+                </div>
+                <BR>
+                <div class="mdui-panel-item-body">
+                    <div class="mdui-typo">
+                        <P>为 MIUI 官方停止更新的设备提供部分技术支持，例如通过部分技术手段更新至最新的 MIUI/Android 版本，体验新特性。</P>
+                        <P>且为部分非小米手机提供 MIUI 系统体验，例如 Xperia 1 Mark II .</P>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+                <div class="mdui-panel-item-header">
+                    <h3>
+                        <font color="#607d8b">更新周期</font>
+                    </h3>
+                </div>
+                <BR>
+                <div class="mdui-panel-item-body">
+                    <div class="mdui-typo">
+                        <P>视机型的性能情况为标准，提供至少一个大版本的更新，后续不定期基于该版本进行优化。</P>
+                        <P>(可以理解为小版本更新，小补小修)</P>
+                        <P>例如 Redmi Note4X (Qcom) 更新到了 MIUI12 | 20.8.5 | Android 10</P>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-card">
+                <div class="mdui-card-media">
+                    <img src="https://s1.ax1x.com/2022/09/18/xpWi8O.png" alt="xpWi8O.png" border="0" />
+                    <div class="mdui-card-media-covered">
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">MIUI EXPERIENCE PREMIUM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+                <div class="mdui-panel-item-header">
+                    <h3>
+                        <font color="#607d8b">简介</font>
+                    </h3>
+                </div>
+                <BR>
+                <div class="mdui-panel-item-body">
+                    <div class="mdui-typo">
+                        <P>基于MIUI EXPERIENCE项目提供的增值服务。</P>
+                        <P>Premium版本新增部分特殊功能，修复大部分疑难杂症，补全系统体验，例如系统级别的护眼模式，内置Zenless内核等。</P>
+                        <P>目前只有部分机型加入了该计划，请查看目标机型页以获取相关信息。
+                        </P>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+                <div class="mdui-panel-item-header">
+                    <h3>
+                        <font color="#607d8b">更新周期</font>
+                    </h3>
+                </div>
+                <BR>
+                <div class="mdui-panel-item-body">
+                    <div class="mdui-typo">
+                        <P>视机型的性能情况为标准，提供至少一个大版本的更新，后续不定期基于该版本进行优化。</P>
+                        <P>(可以理解为小版本更新，小补小修)</P>
+                        <P>例如 Redmi Note4X (Qcom) 更新到了 MIUI12 | 20.8.5 | Android 10</P>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div id="main-gmlite" class="mdui-container">
+            <div class="mdui-card">
+                <div class="mdui-card-media">
+                    <img src="https://s4.ax1x.com/2022/02/18/H7UePg.jpg" alt="H7UePg.jpg" border="0" />
+                    <div class="mdui-card-media-covered">
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title"> GearMagic Lite</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+                <div class="mdui-panel-item-header">
+                    <h3>
+                        <font color="#607d8b">简介</font>
+                    </h3>
+                </div>
+                <BR>
+                <div class="mdui-panel-item-body">
+                    <div class="mdui-typo">
+                        <p>可在<strong>MIUI官方系统内</strong>刷入模块来达到官改效果的<strong>Magisk模块</strong></p>
+                        <p>包含GearMagic官改包的<strong>大多数特性</strong>以及更多的灵活性</p>
+                        <p>目前可追溯到最早的公开版 GearMagic Lite 发布日期为 2019-04-27 <a href="https://www.coolapk.com/feed/11447655?shareKey=M2I1Y2ZhN2I3MGQyNWU0ZjZlZjU~&shareUid=823226&shareFrom=com.coolapk.market_10.0-beta4">点我查看</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-panel-item mdui-panel-item-open mdui-hoverable">
+                <div class="mdui-panel-item-header">
+                    <h3>
+                        <font color="#607d8b">发展历程</font>
+                    </h3>
+                </div>
+                <BR>
+                <div class="mdui-panel-item-body">
+                    <div class="mdui-typo">
+                        <ul>
+                            <li>GearMagic Lite | 1.0</li>
+                            <p>通过TWRP刷入官改修改内容增量包来实现</p>
+                            <li style="visibility:hidden"></li>
+                            <li>GearMagic Lite | 2.0</li>
+                            <p>通过 Magisk Manager 刷入官改修改内容增量包<strong>模块</strong>来实现，<strong>灵活性</strong>升级</p>
+                            <li style="visibility:hidden"></li>
+                            <li>GearMagic Lite | 3.0</li>
+                            <p>通过 Magisk Manager 刷入<strong>自选型</strong>模块，功能自定义DIY选择性刷入，灵活性相比 2.0 有所提高</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-about" class="mdui-container">
+            <br/>
+            <h3 class="mdui-typo">Members</h3>
+            <blockquote class="wp-block-quote">
+                <span id="k-text"></span>
+            </blockquote>
+
+            <div class="mdui-card mdui-hoverable">
+                <div class="mdui-card-header">
+                    <img class="mdui-card-header-avatar" src="">
+                    <div class="mdui-card-header-title">Demo</div>
+                    <div class="mdui-card-header-subtitle">Introduction</div>
+                </div>
+
+                <div class="mdui-card-content">Motto</div>
+                <div class="mdui-card-actions mdui-typo">
+                    <button class="mdui-btn mdui-ripple"><a href="http://example.com">link1</a></button>
+                    <button class="mdui-btn mdui-ripple"><a href="https://example.com">link2</a></button>
+
+                </div>
+            </div>
+
+            <br>
+
+            <div class="mdui-card mdui-hoverable">
+                <div class="mdui-card-header">
+                    <img class="mdui-card-header-avatar" src="">
+                    <div class="mdui-card-header-title">Demo</div>
+                    <div class="mdui-card-header-subtitle">Introduction</div>
+                </div>
+
+                <div class="mdui-card-content">Motto</div>
+                <div class="mdui-card-actions mdui-typo">
+                    <button class="mdui-btn mdui-ripple"><a href="http://example.com">link1</a></button>
+                    <button class="mdui-btn mdui-ripple"><a href="https://example.com">link2</a></button>
+
+                </div>
+            </div>
+
+            <br>
+
+            <h3 class="mdui-typo">Thanks</h3>
+            <blockquote class="wp-block-quote">
+                <span id="k-text"></span>
+            </blockquote>
+
+            <div class="mdui-card mdui-hoverable">
+                <div class="mdui-card-header">
+                    <img class="mdui-card-header-avatar" src="" />
+                    <div class="mdui-card-header-title">Demo</div>
+                    <div class="mdui-card-header-subtitle">Introduction</div>
+                </div>
+
+                <div class="mdui-card-header">
+                    <img class="mdui-card-header-avatar" src="" />
+                    <div class="mdui-card-header-title">Demo</div>
+                    <div class="mdui-card-header-subtitle">Introduction</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 页脚 -->
+    <!-- Footer -->
+    <footer class="mdui-color-grey-100" style="margin-top: 30px; text-align: center; padding: 10px; ">
+        <div class="mdui-container mdui-typo">
+            <p id="Copyright-time"></p>
+            <!-- 获取当前年份，填入Copyright时间 -->
+            <script type="text/javascript">
+                var d = new Date();
+                document.getElementById("Copyright-time").innerHTML = 'Copyright © 2018 - ' + d.getFullYear() + " <a>GeekTeam</a> All rights reserved.";
+            </script>
+        </div>
+    </footer>
+
+    <!-- 来自CDN的MDUI JavaScript -->
+    <!-- MDUI JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+
+    <!-- 控制Drawer开关的JavaScript -->
+    <!-- Control the Drawer -->
+    <script type="text/javascript">
+        var $ = mdui.$;
+        var inst = new mdui.Drawer('#drawer', 'swipe = true');
+        $('#toggle').on('click', function() {
+            inst.toggle();
+        });
+    </script>
+
+    <!-- 我也不知道这段有没有用,主要目的是防止出锅 -->
+    <!-- 在innerWidth小于1080的设备上默认关闭Drawer -->
+    <script type="text/javascript">
+        var width = window.innerWidth;
+        /*window.alert(width);*/
+        if (width < 1080) inst.close();
+    </script>
+
+    <!-- 调试Drawer用的JavaScript.将Drawer的实时状态输出到Console. -->
+    <!-- Output the Status of the Drawer to the Console -->
+    <script type="text/javascript">
+        $('#drawer').on('open.mdui.drawer', function() {
+            console.log('Drawer Opening');
+        });
+
+        $('#drawer').on('opened.mdui.drawer', function() {
+            console.log('Drawer Opened');
+        });
+
+        $('#drawer').on('close.mdui.drawer', function() {
+            console.log('Drawer Closing');
+        });
+
+        $('#drawer').on('closed.mdui.drawer', function() {
+            console.log('Drawer Closed');
+        });
+    </script>
+
+    <!-- 页面切换 -->
+    <!-- Page Switch -->
+    <!-- Thanks to @LTDSA -->
+    <script type="text/javascript">
+        var $ = mdui.$;
+        /*隐藏所有内容*/
+        $('#main-home').addClass('mdui-hidden');
+        $('#main-miuiexp').addClass('mdui-hidden');
+        $('#main-gmlite').addClass('mdui-hidden');
+        $('#main-about').addClass('mdui-hidden');
+
+        $('#drawer-home').removeClass('mdui-list-item-active');
+        $('#drawer-miuiexp').removeClass('mdui-list-item-active');
+        $('#drawer-gmlite').removeClass('mdui-list-item-active');
+        $('#drawer-about').removeClass('mdui-list-item-active');
+
+        /*默认页面:home*/
+        $('#main-home').removeClass('mdui-hidden');
+        $('#drawer-home').addClass('mdui-list-item-active');
+
+        function GetPage(i) {
+            //在小屏幕设备上切换时关闭Drawer
+            var width = window.innerWidth;
+            /*window.alert(width);*/
+            if (width < 1080) inst.close();
+
+            /*重置状态*/
+            $('#main-home').addClass('mdui-hidden');
+            $('#main-miuiexp').addClass('mdui-hidden');
+            $('#main-gmlite').addClass('mdui-hidden');
+            $('#main-about').addClass('mdui-hidden');
+
+            $('#drawer-home').removeClass('mdui-list-item-active');
+            $('#drawer-miuiexp').removeClass('mdui-list-item-active');
+            $('#drawer-gmlite').removeClass('mdui-list-item-active');
+            $('#drawer-about').removeClass('mdui-list-item-active');
+
+            /*切换*/
+            switch (i) {
+                case 0:
+                    $('#main-home').removeClass('mdui-hidden');
+                    $('#drawer-home').addClass('mdui-list-item-active');
+                    console.log('Turned to Home');
+                    break;
+                case 1:
+                    $('#main-miuiexp').removeClass('mdui-hidden');
+                    $('#drawer-miuiexp').addClass('mdui-list-item-active');
+                    console.log('Turned to Miuiexp');
+                    break;
+                case 2:
+                    $('#main-gmlite').removeClass('mdui-hidden');
+                    $('#drawer-gmlite').addClass('mdui-list-item-active');
+                    console.log('Turned to GMLite');
+                    break;
+                case 3:
+                    $('#main-about').removeClass('mdui-hidden');
+                    $('#drawer-about').addClass('mdui-list-item-active');
+                    console.log('Turned to About');
+                    break;
+                default:
+
+            }
+        }
+    </script>
+
+
+    <!-- 深色模式 -->
+    <!-- Dark Mode -->
+    <script type="text/javascript">
+        var $ = mdui.$;
+        //$('#body').addClass('mdui-theme-layout-auto');
+        var DarkMode = 0;
+
+        function DarkmodeHandler() {
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                DarkMode = 1; 
+            } else {
+                DarkMode = 0;
+            }  
+        }
+
+        DarkmodeHandler();
+        if (DarkMode == 1) {
+            $('#body').addClass('mdui-theme-layout-dark');
+        }
+        if (DarkMode == 0) {
+            $('#body').addClass('mdui-theme-layout-white');
+        }
+
+        function SetDark() {
+            if (document.getElementById('body').classList.contains('mdui-theme-layout-dark')) {
+                $('#body').removeClass('mdui-theme-layout-dark');
+            } else {
+                $('#body').addClass('mdui-theme-layout-dark');
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
