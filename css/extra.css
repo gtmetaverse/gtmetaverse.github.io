@@ -1,0 +1,226 @@
+@import "https://fonts.googleapis.com/css?family=Google%20Sans&text=PHOTOSTATION";
+@import "https://fonts.googleapis.com/css?family=Noto%20Serif%20SC";
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    -webkit-touch-callout: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    img {
+        filter: brightness(.9);
+    }
+
+    .ps-appbar {
+        background-color: rgb(17, 17, 17) !important;
+    }
+    .ps-appbar-title {
+        color: white !important;
+    }
+}
+
+@media (min-width: 600px) {
+  .ps-dialog {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ps-dialog {
+    width: 40%;
+  }
+}
+
+.ps-appbar {
+    height: 56px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgb(237, 237, 237);
+    z-index: 100;
+    display: inline;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.ps-appbar-fixed {
+    padding-top: 56px;
+}
+
+.ps-appbar-title {
+    line-height: 56px;
+    letter-spacing: 6px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-family: "Google Sans";
+}
+
+.ps-appbar-actions-left {
+    float: left;
+    height: 56px;
+    margin: 10px;
+}
+
+.ps-appbar-actions-right {
+    float: right;
+    height: 56px;
+    margin: 10px;
+}
+
+.ps-album-thumb-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ps-album-thumb-subtitle {
+    opacity: .8;
+}
+
+.ps-album-thumb-pic {
+    /* padding-bottom: 1px; */
+}
+
+.ps-footer {
+    text-align: center;
+    opacity: .8;
+}
+
+.ps-dialog {
+    height: 605px !important;
+    border-radius: 8px;
+}
+
+.ps-dialog .mdui-dialog-content {
+    padding: 0;
+}
+
+.ps-dialog .mdui-dialog-actions .mdui-btn {
+    border-radius: 8px;
+}
+
+.ps-dialog-about {
+    border-radius: 8px;
+}
+
+.ps-dialog-about .mdui-dialog-actions .mdui-btn {
+    border-radius: 8px;
+}
+
+.ps-dialog-title {
+    font-family: "Noto Serif SC" !important;
+}
+
+.mdui-list-item {
+    border-radius: 8px;
+}
+
+.mdui-drawer .mdui-list .mdui-list-item {
+    border-radius: 0 100px 100px 0;
+    margin-right: 4px;
+    margin-bottom: 8px;
+}
+
+.mdui-drawer .mdui-ripple {
+    border-radius: 0 100px 100px 0;
+}
+
+.ps-drawer-copyright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+}
+
+.ps-drawer-tip {
+    font-size: 13px;
+}
+
+.mdui-snackbar {
+    width: 95%;
+    margin-bottom: 4%;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+            box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+}
+
+.mdui-snackbar-bottom {
+    transition: transform .3s cubic-bezier(0, 0, .2, 1), -webkit-transform .3s cubic-bezier(0, 0, .2, 1);
+}
+
+
+.inline-red {
+display:inline;
+padding:.2em .6em .3em;
+font-size:80%;
+font-weight:bold;
+line-height:1;
+color:#fff;
+text-align:center;
+white-space:nowrap;
+vertical-align:baseline;
+border-radius:0;
+background-color: #df3e3e;
+}
+
+.div-border-left-red {
+display: block;
+padding: 1em;
+margin: 1em 0;
+border: 0.1em solid #ccc;
+border-left-width: 0.5em;
+border-radius: 0.3em;
+border-left-color: #df3e3e;
+}
+
+.div-border-top-red {
+display: block;
+padding: 1em;
+margin: 1em 0;
+border: 1px solid #ccc;
+border-top-width: 0.5em;
+border-radius: 0.3em;
+border-top-color: #df3e3e;
+}
+
+.div-attention {
+  display: block;
+  padding: 1em;
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  border-top-width: 0.5em;
+  border-radius: 0.3em;
+  border-top-color: #df3e3e;
+  background-color: #FFCDD2;
+}
+
+.div-tip {
+    display: block;
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid #ccc;
+    border-top-width: 0.5em;
+    border-radius: 0.3em;
+    border-top-color: #03A9F4;
+    background-color: #B3E5FC;
+  }
+
+.div-attention-main{
+  background-color: #FFFFFF;
+}
+
+.p-attention-title{
+  padding-top: 0px;
+  margin: 0 auto;
+  font-weight: 700;
+  color: black;
+}
